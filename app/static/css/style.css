@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.nav_bar {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 8vh;
+	background-color: rgb(230, 230, 0, 230);
+}
+
+.app_navigator {
+	display: flex;
+	justify-content: space-around;
+	width: 30vw;
+}
+
+.main {
+	display: flex;
+	justify-content: space-around;
+	margin: 40px 0px 20px 0px;
+}
+
+.logo {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-weight: bold;
+	font-size: 20px;
+}

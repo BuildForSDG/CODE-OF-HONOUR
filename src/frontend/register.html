@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Code Of Honour</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/authentication.css" type="text/css">
+</head>
+<body>
+    <main>
+        <div class="logo-wrapper">
+            <a href="#">Logo Here</a>
+        </div>
+        <div class="form-wrapper">
+            <h3 class="text-center">Register</h3>
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="fname">First Name</label>
+                    <input type="text" class="form-control" name="fname" id="fname" placeholder="John" required>
+                </div>
+                <div class="form-group">
+                    <label for="lname">Last Name</label>
+                    <input type="text" class="form-control" name="lname" id="lname" placeholder="Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="johndoe@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="sex">Sex</label>
+                    <div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="sex">Male
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="sex">Female
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phonenumber">Phone number</label>
+                    <input type="phone" class="form-control" name="phonenumber" id="phonenumber" placeholder="+234800000000" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" class="form-control" name="age" id="age" min="1" placeholder="18" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Choose Password</label>
+                    <input type="password" class="form-control" name="password"  id="password" placeholder="********" required>
+                </div>
+                <div class="form-group">
+                    <label for="codeofhonour">Choose Code of Honour</label>
+                    <select class="form-control" name="codeofhonour" id="codeofhonour" required>
+                        <option selected disabled>Choose Code of Honour</option>
+                        <option value="citizen">Citizen</option>
+                        <option value="student">Student</option>
+                        <option value="leader">Leader</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="category">Choose category</label>
+                    <select class="form-control" name="category" id="category" required>
+                        <option selected disabled>Choose category</option>
+                    </select>
+                </div>
+                <div class="form-group occupation">
+                    <label for="occupation">Choose occupation</label>
+                    <select class="form-control" name="occupation" id="occupation" required>
+                        <option selected disabled>Choose occupation</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-black">Register</button>
+            </form>
+            <p class="text-center mt-20">Already have an account? <a href="login.html">Login</p>
+        </div>
+    </main>
+    <script src="main.js"></script>
+    <!--Bootstrap scripts-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#codeofhonour").change(function () {
+                var val = $(this).val();
+                if (val === "citizen") {
+                    $("#category").html("<option value='family'>Family</option><option value='youth'>Community youths</option><option value='children'>Community children</option><option value='lessprivileged'>Less privileged</option>");
+                } else if (val === "student") {
+                    $("#category").html("<option value='primary'>Primary and Nursery</option><option value='secondary'>Secondary School</option><option value='undergraduate'>Undergraduate</option><option value='vocational'>Vocational</option>");
+                } else if (val === "leader") {
+                    $("#category").html("<option value='govofficial'>Government Officials</option><option value='communityleader'>Community Leaders</option><option value='religiousleader'>Religious Leaders</option><option value='businessleader'>Business Leaders</option>");
+                }
+            });
+
+            $('#codeofhonour').change(function(){
+                if($(this).val() === "citizen" || $(this).val() === "leader")
+                $('.occupation').show();
+                else
+                    $('.occupation').hide();
+                }).change();
+        });
+    </script>
+</body>

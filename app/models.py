@@ -11,7 +11,6 @@ class User(AbstractUser):
 	phone = models.CharField(max_length=15)
 	_class = models.ForeignKey('Class', on_delete=models.CASCADE, blank=True, null=True)
 	age = models.PositiveIntegerField(default=0)
-	occupation = models.CharField(max_length=50)
 	sex = models.CharField(max_length=6, choices=(('Male', MALE), ('Female', FEMALE), ('Other', OTHER)))
 	is_student = models.BooleanField(default=False)
 	is_leader = models.BooleanField(default=False)
@@ -30,6 +29,18 @@ class User(AbstractUser):
 
 	class Meta:
 		verbose_name_plural = 'Users'
+
+
+class Occupation(models.Model):
+	occupation = models.CharField(max_length=50)
+
+
+	def __str__(self):
+		return self.occupation
+
+	class Meta:
+		verbose_name_plural = 'Occupations'
+
 
 
 class Class(models.Model):

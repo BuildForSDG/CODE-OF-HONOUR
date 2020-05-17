@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from django.views.generic import CreateView, TemplateView, ListView
-from .models import User
+from .models import User, Occupation
 from .forms import UserForm
-
+from django.views import View
 
 class StudentCreateView(CreateView):
 	template_name_suffix = '_create'
@@ -17,3 +17,14 @@ class HomePage(TemplateView):
 class StudentListView(ListView):
 	model = User
 	template_name_suffix = '_student_list'
+
+
+class ProcessUser(View):
+	def post(self, request):
+		print(request.POST)
+
+
+def ajax_get_occupation(request):
+	occ = request.GET.get('occupation')
+	qs = Occupation.objects.filter(occupation__icontains=occ).first() or ''
+	return render(request, 'app/occupation_list.html', {'occupation': qs})

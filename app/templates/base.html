@@ -12,10 +12,12 @@
 			<ul class="app_navigator">
 				<li><a href="{% url 'student_list' %}"> STUDENT </a></li>
 				<li><a href="{% url 'leader_list' %}"> LEADER </a></li>
-				<li><a href="{% url 'citizen_list' %}"> CITIZEN</li>
+				<li><a href="{% url 'citizen_list' %}"> CITIZEN</a></li>
 			</ul>
 		</nav>
 		{% block main %} {% endblock %}
+		{% block js %}
+		{% endblock js %}
 	</body>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</html>
+</html>	

@@ -1,1 +1,3 @@
-codeofhonor/app/__pycache__/*.pyc
+app/__pycache__/*.pyc
+app/migrations/__pycache__/*.pyc
+

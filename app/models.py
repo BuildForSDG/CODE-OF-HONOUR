@@ -125,7 +125,6 @@ class leader(models.Model):
     gender = models.CharField(max_length=50, null=True, blank=True,choices=gender_choices)
     religion = models.CharField(max_length=50, null=True, blank=True,choices=religion_choices)
     date_created = models.DateTimeField(auto_now_add=True, null=True)
-    #img = models.ImageField(upload_to=upload_img,null=True, blank=True)
     leader_img = models.ImageField(upload_to='images/logos', null=True, blank=True)
 
     def __str__(self):
@@ -171,7 +170,6 @@ class citizen(models.Model):
     gender = models.CharField(max_length=50, null=True, blank=True,choices=gender_choices)
     religion = models.CharField(max_length=50, null=True, blank=True,choices=religion_choices)
     date_created = models.DateTimeField(auto_now_add=True, null=True)
-    #img = models.ImageField(upload_to=upload_img,null=True, blank=True)
     citizen_img = models.ImageField(upload_to='images/logos', null=True, blank=True)
 
     def __str__(self):

@@ -35,7 +35,7 @@ header nav li:last-child {
   margin-right: 0;
 }
 
-/*Hero*/
+/* Hero */
 .background-image {
   position: absolute;
   right: 5%;
@@ -55,10 +55,11 @@ header nav li:last-child {
   left: 1%;
   background-image: url(https://i.ibb.co/TTjgkym/africa.png);
 }
-/*end of hero*/
 
-/*carousel*/
-.carousel-indicator{
+/* end of hero */
+
+/* carousel */
+.carousel-indicator {
   margin-bottom: 50%;
 }
 
@@ -95,12 +96,12 @@ header nav li:last-child {
   color: grey;
 }
 
-/*hide labels*/
+/* hide labels */
 .hidden {
-	position:absolute;
-left:-10000px;
-top:auto;
-width:1px;
-height:1px;
-overflow:hidden;
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }

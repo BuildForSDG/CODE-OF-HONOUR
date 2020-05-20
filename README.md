@@ -1,12 +1,21 @@
-# CODE-OF-HONOUR
-This is the user models for the project using django
+# CODE OF HONOR SIMPLE DOCS
 
-How to....
-1. Get Python3 and Django1.11+ Installed on your PC
-2. Download CrispyForms and Pillow using pip install <Package-Name>
-3. Clone the repository and extract
-4. Navigate using cd <project-name>
-5. Run "python manage.py runserver"
-6. Follow the url 127.0.0.1:8000 to the homepage
-7. Login to the admin page at 127.0.0.1:8000/admin
-8. Username = su1 and Password = pass123
+## Query Student Class
+```Class.objects.filter(is_student=True).first()```
+
+## Query Student Users
+```clss = Class.objects.filter(is_student=True).first()```
+```users = clss.user_set.all()```
+
+## Add User to students group
+```user = 'any created user object'```
+```clss = Class.objects.filter(is_student=True).first()```
+```clss.user_set.add(user)```
+
+
+## Check User permission in templates
+SYNTAX: ```if perms.<app_name>.<permission_code>```
+
+persmission_code is action (add, view, change, delete) underscore model name
+
+``` if perms.app.view_class ```

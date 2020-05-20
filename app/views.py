@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import CreateView, TemplateView, ListView
-from .models import User, Occupation
+from .models import User, Occupation, Class
 from .forms import UserForm
 from django.views import View
 

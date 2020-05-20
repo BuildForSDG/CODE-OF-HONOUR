@@ -7,19 +7,15 @@ FEMALE = 'Female'
 OTHER = 'Other'
 
 class User(AbstractUser):
-	othername = models.CharField(max_length=20)
+	othername = models.CharField(max_length=20, blank=True)
 	phone = models.CharField(max_length=15)
-	_class = models.ForeignKey('Class', on_delete=models.CASCADE, blank=True, null=True)
+	#_class = models.ForeignKey(Class, on_delete=models.CASCADE, blank=True, null=True)
 	age = models.PositiveIntegerField(default=0)
-	sex = models.CharField(max_length=6, choices=(('Male', MALE), ('Female', FEMALE), ('Other', OTHER)))
-	is_student = models.BooleanField(default=False)
-	is_leader = models.BooleanField(default=False)
-	is_citizen = models.BooleanField(default=False)
+	sex = models.CharField(max_length=6, blank=True, choices=(('Male', MALE), ('Female', FEMALE), ('Other', OTHER)))
 
 
 	def __str__(self):
 		return self.get_full_name()
-
 
 	def get_full_name(self):
 		return f"{self.first_name or self.username} {self.last_name} {self.othername}"
@@ -29,6 +25,11 @@ class User(AbstractUser):
 
 	class Meta:
 		verbose_name_plural = 'Users'
+
+class Class(Group):
+	is_student = models.BooleanField(default=False)
+	is_leader = models.BooleanField(default=False)
+	is_citizen = models.BooleanField(default=False)
 
 
 class Occupation(models.Model):
@@ -40,19 +41,6 @@ class Occupation(models.Model):
 
 	class Meta:
 		verbose_name_plural = 'Occupations'
-
-
-
-class Class(models.Model):
-	name = models.CharField(max_length=20)
-
-	def __str__(self):
-		return self.name
-
-
-	class Meta:
-		permissions = ()
-		verbose_name_plural = 'Classes'
 
 
 
@@ -72,9 +60,9 @@ class Subject(models.Model):
 		
 		
 		
-		
-#  Model Structure		
-'''
+'''		
+ Model Structure		
+
 
 class student(models.Model):
     gender_choices = (('male','male'), ('female','female'))

@@ -3,7 +3,7 @@ from .models import *
 
 
 class UserAdmin(admin.ModelAdmin):
-	list_display = ['first_name', 'last_name', 'username', 'is_student', 'is_leader', 'is_citizen']
+	list_display = ['first_name', 'last_name', 'username']
 
 class OccupationAdmin(admin.ModelAdmin):
 	list_display = ['occupation']
@@ -12,4 +12,3 @@ admin.site.register(User, UserAdmin)
 admin.site.register(Class)
 admin.site.register(Subject)
 admin.site.register(Occupation, OccupationAdmin)
-

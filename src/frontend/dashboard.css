@@ -3,6 +3,7 @@
   padding: 2.5%;
 }
 
+/* stepwizard */
 .stepwizard {
   display: table;
   width: 100%;
@@ -98,11 +99,13 @@
   line-height: 1.5428571;
 }
 
+/* Slide Presentation */
 .slide {
   width: 960px;
   height: 569px;
 }
 
+/* media queries */
 @media only screen and (max-width: 768px) {
   .stepwizard {
     width: 107% !important;

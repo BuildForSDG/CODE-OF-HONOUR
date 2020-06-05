@@ -63,32 +63,24 @@ header nav li:last-child {
   margin-bottom: 50%;
 }
 
-.row {
-  display: grid;
-  padding: 5px;
-  width: 100%;
+@media only screen and (max-width: 768px){
+  .jumbotron{
+      margin-top: 10%;
+  }
 }
-
-/* Floating column for labels: 25% width */
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-  padding-top: 10%;
+/*meet the team section*/
+.team-member {
+  margin-bottom: 3rem;
+  text-align: center;
 }
-
-/* Floating column for inputs: 75% width */
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
+.team-member img {
+  width: 14rem;
+  height: 14rem;
+  border: 0.5rem solid rgba(0, 0, 0, 0.1);
 }
-
-/* Clear floats after the columns */
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
+.team-member h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
 }
 
 /* Social icons */
@@ -96,12 +88,4 @@ header nav li:last-child {
   color: grey;
 }
 
-/* hide labels */
-.hidden {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
+

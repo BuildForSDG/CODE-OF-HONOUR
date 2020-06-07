@@ -1,0 +1,29 @@
+{
+  "name": "CODE-OF-HONOUR",
+  "version": "1.0.0",
+  "description": "A one-liner phrase describing this project or app",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/eslint src/frontend/prgchk.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BuildForSDG/CODE-OF-HONOUR.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BuildForSDG/CODE-OF-HONOUR/issues"
+  },
+  "homepage": "https://github.com/BuildForSDG/CODE-OF-HONOUR#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2"
+  }
+}

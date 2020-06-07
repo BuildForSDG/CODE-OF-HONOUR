@@ -104,14 +104,15 @@
   width: 960px;
   height: 569px;
   margin-top: 5%;
-  }
-/*hide radio button*/
-  [type='radio'] {
-    display: none; 
-    }
+}
+
+/* hide radio button */
+[type='radio'] {
+  display: none;
+}
 
 /* answer */
-.answer{
+.answer {
   margin-left: 10px;
 }
 
@@ -170,11 +171,10 @@
   }
 }
 
-/* Small devices (landscape phones, 576px and up)*/
+/* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) {
   .container {
     padding-top: 15%;
     position: relative;
   }
- 
-   }
+}

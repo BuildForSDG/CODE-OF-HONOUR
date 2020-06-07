@@ -77,30 +77,51 @@
         <div class="card w-75 mx-auto" style="margin-top: 10%;">
             <div class="row no-gutters">
                 <div class="col-sm-4" style="background: #868e96;">
-                    <img src="images/sample.svg" class="card-img-top h-100" alt="...">
+                    <img src="assets/values.webp" class="card-img-top img-fluid mx-auto d-block" alt="values">
                 </div>
                 <div class="col-sm-8">
                     <div class="card-body">
                         <h5 class="card-title">Values</h5>
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt vel consequuntur sapiente eos tempora
-                            tempore placeat aperiam at magnam molestias vitae dicta eius minus veniam dolore delectus fuga,
-                            esse voluptates non! Debitis harum eius, dolor voluptatem accusamus dignissimos, laboriosam perferendis
-                            quae nisi explicabo, aut ullam ut voluptatum dolore veniam cumque ipsa autem ea perspiciatis
-                            quaerat. Cumque quia ipsa perspiciatis blanditiis dolores ipsam optio dignissimos autem exercitationem
-                            architecto! Accusantium, ipsum architecto ut nihil voluptate maiores tempora. Praesentium nihil
-                            earum dolor similique reprehenderit cumque saepe placeat? In sint officia nobis! Beatae ad repellendus
-                            officiis temporibus cupiditate possimus magnam nisi doloremque perspiciatis autem.</p>
-                        <a href="#" class="btn btn-primary stretched-link">View Profile</a>
+                        <p class="card-text">Introduction to the Code of Honour values.</p>
+                        <a class="btn btn-primary stretched-link" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                            aria-controls="collapseExample">View Values</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="mx-auto w-100">
-            <iframe class="embed-responsive-item slide" src="https://docs.google.com/presentation/d/e/2PACX-1vTAVQ4Fpi3QKuL-RA3EPMJlK0aB5r1d12HFMNNrvbQ9U_Br0eNXOA7SAoBJ54MKarSU7UtoKzbCPtar/embed?start=false&loop=false&delayms=10000"
-                frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+    <div class="w-75 mx-auto collapse" id="collapseExample">
+        <iframe class="embed-responsive-item slide" src="https://docs.google.com/presentation/d/e/2PACX-1vTAVQ4Fpi3QKuL-RA3EPMJlK0aB5r1d12HFMNNrvbQ9U_Br0eNXOA7SAoBJ54MKarSU7UtoKzbCPtar/embed?start=false&loop=false&delayms=10000"
+            frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        <div>
+            <a type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target=".bd-example-modal-lg" style="max-width: 960px; margin-bottom: 5%; color: white;">Continue</a>
         </div>
     </div>
 
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="Quiz" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Quiz</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="quiz" style="margin-left: 5px;"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-primary" id="submit" data-toggle="collapse" data-target="#forward" aria-expanded="false" aria-controls="forward">Get Results</button>
+                        </div>
+                        <div class="col ml-auto collapse" id="forward">
+                            <a href=# class="btn btn-primary">Complete and Continue</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="results"></div>
+            </div>
+        </div>
+    </div>
     <!--Font awesome-->
     <script src="https://kit.fontawesome.com/943badfd1d.js" crossorigin="anonymous"></script>
     <!--Bootstrap scripts-->
@@ -110,6 +131,6 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-</body>
+    <script src="prgchk.js"></script>
 
 </html>

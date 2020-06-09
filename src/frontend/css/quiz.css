@@ -12,24 +12,22 @@
 }
 
 body {
-  --hue: var(--neutral);
-
-  padding: 0;
+ padding: 0;
   margin: 0;
   display: flex;
   width: 100vw;
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background-color: hsl(var(--hue), 100%, 20%);
+  background-color: hsl(200, 100%, 20%);
 }
 
 body.correct {
-  --hue: var(--correct);
+  background-color: hsl(145, 0%, 0%);
 }
 
 body.wrong {
-  --hue: var(--wrong);
+  background-color: hsl(145, 0%, 0%);
 }
 
 .container {
@@ -49,10 +47,8 @@ body.wrong {
 }
 
 .button {
-  --hue: var(--neutral);
-
-  border: 1px solid hsl(var(--hue), 100%, 30%);
-  background-color: hsl(var(--hue), 100%, 50%);
+  border: 1px solid hsl(200, 100%, 30%);
+  background-color: hsl(200, 100%, 50%);
   border-radius: 5px;
   padding: 5px 10px;
   color: white;

@@ -1,6 +1,7 @@
 # FILES
 **/**/.pyc
 .DS_Store
+package.json
 
 # DIRECTORIES
 **/**/__pycache__

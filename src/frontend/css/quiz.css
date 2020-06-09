@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+/* :root {
+  --neutral: 200;
+  --wrong: 0;
+  --correct: 145;
+} */
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(200, 100%, 20%);
+}
+
+body.correct {
+  background-color: hsl(145, 100%, 20%);
+}
+
+body.wrong {
+  background-color: hsl(0, 100%, 20%);
+}
+
+.container {
+  width: 800px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.button {
+  border: 1px solid hsl(200, 100%, 30%);
+  background-color: hsl(200, 100%, 50%);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+}
+
+.button:hover {
+  border-color: black;
+}
+
+.button.correct {
+  background-color: hsl(145, 100%, 30%);
+  color: black;
+}
+
+.button.wrong {
+  background-color: hsl(0, 100%, 30%);
+}
+
+.start-button,
+.next-button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

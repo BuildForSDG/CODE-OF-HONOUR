@@ -4,14 +4,18 @@ from .models import User, Occupation, Class
 from .forms import UserForm
 from django.views import View
 
-class StudentCreateView(CreateView):
+class Registration(CreateView):
 	template_name_suffix = '_create'
 	model = User
 	form_class = UserForm
-
+	success_url = '/account/login/'
 
 class HomePage(TemplateView):
 	template_name = 'app/home.html'
+
+
+class AssessmentView(TemplateView):
+	template_name = 'app/assessment.html'
 
 
 class StudentListView(ListView):

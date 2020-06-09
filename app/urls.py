@@ -1,18 +1,10 @@
 from django.urls import path
 from . import views
 
+
+app_name = 'main'
 urlpatterns = [
-		path('', views.HomePage.as_view(), name='home_page'),
-
-		path('students/', views.StudentListView.as_view(), name='student_list'),
-		path('students/add/', views.StudentCreateView.as_view(), name='create_student'),
-		path('user/add/save/', views.ProcessUser.as_view(), name='add_user'),
-
-
-		path('ajax/occupation/', views.ajax_get_occupation, name='get_occupation'),
-
-		path('', views.HomePage.as_view(), name='leader_list'),
-		path('', views.HomePage.as_view(), name='citizen_list'),
-
-
+		path('', views.HomePage.as_view(), name='home'),
+		path('user/add/', views.Registration.as_view(), name='register'),
+		path('assessment/', views.AssessmentView.as_view(), name='assessment'),
 	]

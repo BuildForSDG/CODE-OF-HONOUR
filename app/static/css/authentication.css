@@ -1,0 +1,47 @@
+body {
+	background: #c9cce1;
+	padding: 2rem 0;
+}
+.logo-wrapper {
+	display: flex;
+    justify-content: center;
+}
+.logo-wrapper a {
+	color: #222;
+}
+.form-wrapper {
+	background: #fff;
+	width: 50%;
+	margin: 2rem auto;
+	padding: 2rem;
+	border-radius: 4px;
+}
+.login-form,
+.mt-20 {
+	margin-top: 2rem;
+}
+.form-control,
+.btn.btn-primary.btn-black {
+	height: 50px;
+    padding-top: 0px;
+}
+.btn.btn-primary.btn-black {
+    width: 100%;
+    font-weight: 700;
+}
+.login-form .d-flex {
+	justify-content: space-between; 
+	margin: 20px 0 10px 0;
+}
+.form-wrapper a {
+	color: #212529;
+}
+.occupation {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+	.form-wrapper {
+		width: 80%;
+	}
+}

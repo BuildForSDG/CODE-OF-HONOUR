@@ -1,6 +1,6 @@
 from django import forms
 from .models import User, Occupation
-
+from django.contrib.auth.hashers import make_password
 
 
 class StudentForm(forms.ModelForm):
@@ -10,17 +10,15 @@ class StudentForm(forms.ModelForm):
 
 
 class UserForm(forms.ModelForm):
-	is_student = forms.BooleanField(required=False)
-	occupation = forms.CharField(max_length=100)
-	
-	def __init__(self, *args, **kwargs):
-		super(UserForm, self).__init__()
-		self.fields['is_student'].widget.attrs['hidden'] = 'True'
-		self.fields['is_student'].widget.attrs['checked'] = 'True'
-		self.fields['is_student'].label = ''
+	occupation = forms.ModelChoiceField(
+		queryset=Occupation.objects.all()
+	)
 
-		self.fields['occupation'].widget.attrs['class'] = 'occupation'
+	def clean_password(self):
+		plain_password = self.cleaned_data['password']
+		password = make_password(plain_password)
+		return password
 
 	class Meta:
 		model = User
-		fields = ['first_name', 'last_name', 'othername', 'phone', 'email', 'sex', 'age']
+		fields = ['username', 'password', 'first_name', 'last_name', 'othername', 'phone', 'email', 'sex', 'age']

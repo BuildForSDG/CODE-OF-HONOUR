@@ -1,0 +1,131 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% block title %} Code Of Honour {% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <meta name="description" content="code of honour is aimed at restoring african values and reducing corrupt 
+    practices in the society, it seeks to contribute to the attainment of SDG goal 16">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/main.css' %}" />
+    <!-- Bootstrap css -->
+    <link rel="stylesheet preconnect" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #fff;">
+            <a class="navbar-brand" href="index">Logo Here</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-label="Navigation"
+                aria-controls="collapsibleNavbar" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'main:home' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about' %}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+
+                    {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'logout' %}">Log Out ({{ user.username|upper }})</a>
+                    </li>
+                    {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'login' %}">Log in</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'main:register' %}">Sign Up</a>
+                    </li>
+                    {% endif %}
+
+                </ul>
+                <form class="form-inline form-navbar my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" name="search" placeholder="Search" aria-label="Search" aria-expanded="false"
+                        aria-controls="search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    {% block main %}
+
+    {% endblock %}
+
+    {% block footer %}
+     <!-- Footer -->
+    <footer class="page-footer font-small">
+
+        <!-- Social Elements -->
+        <div class="container">
+
+            <!-- Grid row-->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-12 py-3">
+                    <div class="mb-4 d-flex justify-content-center">
+                        <!-- Email -->
+                        <a href="" class="social" aria-label="Send us an Email">
+                            <i class="fas fa-envelope fa-lg mr-md-4 mr-3 fa-2x"> </i>
+                        </a>
+                        <!-- Facebook -->
+                        <a href="#" class="social" aria-label="Follow us on Facebook">
+                            <i class="fab fa-facebook-f fa-lg mr-md-4 mr-3 fa-2x"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a href="#" class="social" aria-label="Follow us on Twitter">
+                            <i class="fab fa-twitter fa-lg mr-md-4 mr-3 fa-2x"> </i>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="#" class="social" aria-label="Follow us on Instagram">
+                            <i class="fab fa-instagram fa-lg mr-md-4 mr-3 fa-2x"> </i>
+                        </a>
+                        <!-- Github -->
+                        <a href="#" class="social" aria-label="Github">
+                            <i class="fab fa-github fa-lg fa-2x"> </i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
+
+        </div>
+        <!-- Footer Elements -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-2">© 2020
+            <a href="#"> Code of Honour</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    {% endblock %}
+
+
+    <!--Font awesome-->
+    <script preconnect src="https://kit.fontawesome.com/943badfd1d.js" crossorigin="anonymous"></script>
+    <!--Bootstrap scripts-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>

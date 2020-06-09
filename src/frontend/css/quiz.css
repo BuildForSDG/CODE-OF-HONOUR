@@ -6,15 +6,9 @@
 }
 
 :root {
-<<<<<<< HEAD
   --neutral: 200;
   --wrong: 0;
   --correct: 145;
-=======
-  --{hue-neutral: 200;}
-  --{hue-wrong: 0;}
-  --{hue-correct: 145;}
->>>>>>> 8db978db0986cba8957f172c7275fe9d6945ef76
 }
 
 body {

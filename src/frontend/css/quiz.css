@@ -5,11 +5,11 @@
   font-family: monospace;
 }
 
-:root {
+/*:root {
   --neutral: 200;
   --wrong: 0;
   --correct: 145;
-}
+}*/
 
 body {
  padding: 0;
@@ -23,11 +23,11 @@ body {
 }
 
 body.correct {
-  background-color: hsl(145, 0%, 0%);
+  background-color: hsl(145, 100%, 20%);
 }
 
 body.wrong {
-  background-color: hsl(145, 0%, 0%);
+  background-color: hsl(0, 100%, 20%);
 }
 
 .container {

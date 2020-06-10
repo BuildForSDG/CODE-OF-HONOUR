@@ -1,102 +1,14 @@
-.liAll{
+#assessmentCover{
     position: absolute;
-     top: 40px;
-     font-size: 14px;
-     left:60px;
+    top: 200px;
+    left: 200px;
+    width: 1000px;
+    height: 2000px;
+    z-index: 13;
+    display: none;
 }
- #li0{
-     left: 350px;
- }
-#li1{
-     left: 530px;
- }
- #li2{
-     left: 640px;
- }
-#li3{
-     left: 740px;
- }
-#li4{
-     left: 830px;
- }
- #li5{
-     left: 980px;
- }
- #li6{
-     left: 1070px;
- }
-.bullseye{
- color: #636e72;
- font-size: 13px;
- position: absolute;
- top:80px
-}
-
-#bullseye0{
- left: 420px;
- color:#3498db;
-}
-#bullseye1{
- left: 560px;
-}
-#bullseye2{
- left: 650px;
-}
-#bullseye3{
- left: 750px;
-}
-#bullseye4{
- left: 850px;
-}
-#bullseye5{
- left: 990px;
-}
-#bullseye6{
- left: 1090px;
-}
-
-.line{
-position: absolute;
-background-color: #95a5a6;
-height: 3px;
-top: 85px;
-}
-
-#line0{
- left: 431px;
- width: 130px;
- background-color: #3498db;
- }
-
- #line1{
- left: 572px;
- width: 78px;
- }
- #line2{
-     left: 662px;
-     width: 90px;
-     }
- #line2{
-     left: 662px;
-     width: 90px;
-    }
-#line3{
-     left: 762px;
-     width: 90px;
-     }
- #line4{
-     left: 862px;
-     width: 130px;
-     }
-#line5{
-     left: 1003px;
-     width: 87px;
-     }
 #Assessment{
-    position: absolute;
-    top: 150px;
-    font-size: 30px;
-    left: 700px;
+    text-align: center;
 }
 #lorem0{
     top: 230px;
@@ -175,6 +87,84 @@ top: 85px;
     padding: 10px;
 }
 
+#assessmentDashBoard{
+    position: absolute;
+    top: 160px;
+    left: 250px;
+    z-index: 13;
+    width: 1000px;
+    height: 600px;
+    font-size: 14px;
+}
+
+#assessmentDashBoard h3{
+    text-align: center;
+}
+
+.personalAssCover{
+    display: flex;
+    justify-content: space-around;
+}
+.personalAss{
+    padding: 45px;
+    background-color: #2d3436;
+    height: 40px;
+    border-radius: 15px;
+    flex-basis: 100px;
+    color: white;
+    cursor: pointer;
+}
+
+#midPersonalAss{
+    text-align: center;
+    color: white;
+}
+.personalAss0{
+    display: inline-block;
+    width: 100px;
+    padding: 30px;
+    background-color: #2d3436;
+    height: 40px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.allAssess_{
+    position: absolute;
+    top: 140px;
+    left: 450px;
+    z-index: 13;
+    height: 500px;
+    font-size: 14px;
+    overflow-y: scroll;
+}
+
+.formRadioCover{
+    display: flex;
+    justify-content: space-around;
+}
+
+#origCommunityAssessmentCover{
+    display: none;
+    width: 500px;
+}
+#origPersonalAssCover{
+    display: none;
+    width: 700px;
+}
+#origHistoricalAss_{
+    display: none;
+    width: 500px;
+    z-index: 100;
+    color: black;
+}
+
+.perAssBtn{
+    
+}
+
+
+
 
 
 
@@ -185,89 +175,6 @@ top: 85px;
 
 }
 @media screen and (min-width: 361px) and (max-width: 375px){
-
-.liAll{
-     top: 40px;
-     font-size: 14px;
-}
- #li0{
-     left: 20px;
- }
-#li1{
-     left: 175px;
- }
- #li2{
-     left: 260px;
- }
-#li3{
-     left: 310px;
- }
-#li4{
-     left: 360px;
- }
- #li5{
-     left: 480px;
- }
- #li6{
-     left: 530px;
- }
- .bullseye{
-     font-size: 13px;
-     top: 80px
- }
- #bullseye0{
-     left: 100px;
- }
-  #bullseye1{
-     left: 200px;
- }
-  #bullseye2{
-     left: 275px;
- }
-  #bullseye3{
-     left: 320px;
- }
-  #bullseye4{
-     left: 415px;
- }
-  #bullseye5{
-     left: 490px;
- }
-  #bullseye6{
-     left: 550px;
- }
- .line{
-position: absolute;
-background-color: #95a5a6;
-height: 3px;
-top: 85px;
-}
-
-#line0{
- left: 112px;
- width: 90px;
- }
-
- #line1{
- left: 213px;
- width: 64px;
- }
-     #line2{
-     left: 286px;
-     width: 35px;
-     }
-     #line3{
-     left: 332px;
-     width: 83px;
-     }
-     #line4{
-     left: 427px;
-     width: 65px;
-     }
-     #line5{
-     left: 500px;
-     width: 50px;
-     }
 
 }
 

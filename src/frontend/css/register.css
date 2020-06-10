@@ -134,6 +134,17 @@ color:#0984e3;
     z-index: 13;
     display: none;
 }
+a {
+    color: #0060B6;
+    text-decoration: none;
+}
+
+a:hover 
+{
+     color:#00A0C6; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
 
 /* #cover_register{
     position: absolute;

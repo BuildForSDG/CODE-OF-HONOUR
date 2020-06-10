@@ -1,0 +1,38 @@
+#certificate{
+    position: absolute;
+    top: 30px;
+    left: 400px;
+    width: 800px;
+    height: 850px;
+    object-fit:contain;
+}
+
+.certi{
+    width: 600px;
+    height: 650px;
+}
+
+.certtext{
+    margin-left: 120px;
+}
+
+.datee{
+    position: absolute;
+    top: 520px;
+    left: 500px;
+    z-index: 10;
+}
+.honorCode{
+    position: absolute;
+    top: 390px;
+    left: 650px;
+    font-size: 23px;
+    z-index: 10;
+}
+#name{
+    position: absolute;
+    top: 260px;
+    left: 640px;
+    font-size: 25px;
+    z-index:14;
+}

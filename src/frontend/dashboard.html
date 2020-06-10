@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/dashboard.css"/>
     <link rel="stylesheet" type="text/css" href="css/register.css"/>
     <link rel="stylesheet" type="text/css" href="cSS/code.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
     <script src="https://kit.fontawesome.com/882955c3c2.js" crossorigin="anonymous"></script>
     <title>DashBoard</title>
 </head>
@@ -14,13 +15,14 @@
     <div id="Header"><h4>Code of Honour</h4></div>
 
 <div id="sideBar">
-    <div id="side0" class="side">Value</div>
-    <div id="side1" class="side">Codes</div>
-    <div id="side2" class="side">Pledge</div>
-    <div id="side3" class="side">Action</div>
-    <div id="side4" class="side">Campaign</div>
-    <div id="side5" class="side">Volunteer</div>
-    <div id="side6" class="side">Certificate</div>
+    <div id="side0" class="side sideEnable">Assessment</div>
+    <div id="side1" class="side sideDisable">Value</div>
+    <div id="side2" class="side sideDisable">Codes</div>
+    <div id="side3" class="side sideDisable">Pledge</div>
+    <div id="side4" class="side sideDisable">Action</div>
+    <div id="side5" class="side sideDisable">Campaign</div>
+    <div id="side6" class="side sideDisable">Volunteer</div>
+    <div id="side7" class="side sideDisable">Certificate</div>
 </div>
 
 <div class="User_img">
@@ -37,15 +39,26 @@
 
 <div class="acct">Account</div>
 <div id="value">
-    <h4 id="valuesHeading">Values</h4>
+    <h4 class="valuesHeading" style="font-size: 40px; margin-top: 0px;">Values</h4>
+    <h6 class="valuesHeading">The 12 core Values that would re-established the African people</h6>
     <div class="val">
-        <div class="img0"><img src="Img/GG.jpg" alt="Girl in a jacket" class="actImg" /></div>
-        <div class="txt0">Hello World</div>
+        <div class="img0">1</div>
+        <div class="txt0">
+            <h4 style="color: tomato; margin-top: 0px; font-size: 20px;">Unconditional Love</h4>
+            Unconditional love is known as affection without any limitations, or love without conditions. This term is sometimes associated with other terms such as true altruism or complete love. Each area of expertise has a certain way of describing unconditional love, but most will agree that it is that type of love which has no bounds and is unchanging.
+            Some authors make a distinction between unconditional love and conditional love. In conditional love, love is 'earned' on the basis of conscious or unconscious conditions being met by the lover, whereas in unconditional love, love is "given freely" to the loved one "no matter what". Loving is primary. Conditional love requires some kind of finite exchange, whereas unconditional love is seen as infinite and measureless.
+            </div>
     </div>
     <div class="val">
-        <div class="img0"><img src="Img/GG.jpg" alt="Girl in a jacket" class="actImg" /></div>
-        <div class="txt0">Hello World</div>
+        <div class="img0">2</div>
+        
+        <div class="txt0">
+            <h4 style="color: tomato; margin-top: 10px; font-size: 20px;">Honesty</h4>
+            Honesty is a facet of moral character that connotes positive and virtuous attributes such as integrity, truthfulness, straightforwardness, including straightforwardness of conduct, along with the absence of lying, cheating, theft, etc. Honesty also involves being trustworthy, loyal, fair, and sincere. Honesty is the quality or fact of being honest; uprightness and fairness to oneself and others. It is also truthfulness, sincerity, or frankness. </div>
     </div>
+    <button id="buttonNext1" class="buttonNext">
+        Submit
+    </button>
 </div>
 
 <div class="Codes">
@@ -54,18 +67,21 @@
         do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     <div class="code0" class="actualcode">
         <div class="code_0"><h1>STU001</h1></div>
-        <div class="code_1">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-             Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-              dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-            sunt in culpa qui officia deserunt mollit anim id est laborum."<br><br>
+        <div class="code_1"> Dream of a better future, whereby striving to love all, care for all and solve community problem through skill and knowledge gotten.<br><br>
+            <span class="valSpan">Value 1</span><span class="valSpan">Value 2</span><span class="valSpan">Value 3</span> <span class="valSpan">Value 4</span> <i class="fas fa-share-alt shearBT"></i>
+        </div>
+    </div>
+    <div class="code0" class="actualcode">
+        <div class="code_0"><h1>STU002</h1></div>
+        <div class="code_1"> Don't fear failure, take the next step and solve problems facing the community. Think critically, innovate and make an impact on your generation. Take a risk and fear not what others may say or think within your environment, but with your strength, determination, persistence and love for all you will make it.<br><br>
             <span class="valSpan">Value 1</span><span class="valSpan">Value 2</span><span class="valSpan">Value 3</span> <span class="valSpan">Value 4</span> <i class="fas fa-share-alt shearBT"></i>
         </div>
     </div>
     <div class="code0" class="actualcode"></div>
     <div class="code0" class="actualcode"></div>
+    <button id="buttonNext2" class="buttonNext">
+        Submit
+    </button>
 </div>
 
 <div class="Pledge">
@@ -79,7 +95,9 @@
 
     <div class="pastCover"><i class="fas fa-paste past"  onClick="copyDivToClipboard()"></i> <p class="pledg2">Copy the Pledg and past it in this box</p></div>
     <textarea class="pledg3" cols="130" rows="15" wrap="virtual"></textarea>
-    <button class="submitBtn">Submit</button>
+    <button id="buttonNext3" class="buttonNext">
+        Submit
+    </button>
 </div>
 
 <div id="Action">
@@ -94,7 +112,7 @@
             Ut enim ad minim veniam, quis nostrud
         </p></div>
         <div class="btnCover">
-            <button class="btn0">Submit</button>
+            <button id="buttonNext4" class="btn0">Submit</button>
             </div>
     </div>
     <div class="actionCard0">
@@ -294,13 +312,917 @@
         <button class="prevbtn1">
             Previous
         </button>
-        <button class="prevbtn1">
+        <button id="buttonNext5" class="buttonNext">
             Next
         </button>
     </div>
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="assessmentDashBoard">
+<h3>CODE OF HONOUR ASSESMENT</h3>
+<div class="personalAssCover">
+<div id="PAssess" class="personalAss">
+    PERSONAL ASSESSMENT
+</div>
+<div id="CAssess" class="personalAss">
+    COMMUNITY ASSESSMENT 
+</div>
+</div>
+<div id="midPersonalAss">
+<div id="HisAss_" class="personalAss0">
+    HISTORICAL ASSESSMENT
+</div>
+</div>
+<div class="personalAssCover">
+<div class="personalAss">
+    LEADERSHIP ASSESSMENT 
+</div>
+<div class="personalAss">
+    LOGICAL ASSESSMENT
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="origPersonalAssCover" class="allAssess_">
+    <div class="paOrig">
+<p>1.	When you are faced with the opinion of doing what’s right and all objection of doing what’s wrong is looking impossible. Will you let go so to be free from any consequence?</p>
+<form>
+    <div  class="formRadioCover" class="formA">
+    <input type="radio" name="gender" value="SD">
+    <label for="male">Strongly Disagree</label><br>
+    <input type="radio" name="gender" value="Disagree">
+    <label for="female">Disagree</label><br>
+    <input type="radio" name="gender" value="Nutral">
+    <label for="other">Neutral</label>
+    <input type="radio" name="gender" value="Agree">
+    <label for="other">Agree</label>
+    <input type="radio"  name="gender" value="Agree">
+    <label for="other">Strongly Agree</label>
+</div>
+  </form> 
+</div>
+
+
+<div class="paOrig">
+    <p>2.	Will you hold unto core moral values no matter any challenge or consequence?</p>
+    <form>
+        <div  class="formRadioCover" class="formA">
+        <input type="radio" name="gender" value="SD">
+        <label for="male">Strongly Disagree</label><br>
+        <input type="radio" name="gender" value="Disagree">
+        <label for="female">Disagree</label><br>
+        <input type="radio" name="gender" value="Nutral">
+        <label for="other">Neutral</label>
+        <input type="radio" name="gender" value="Agree">
+        <label for="other">Agree</label>
+        <input type="radio"  name="gender" value="Agree">
+        <label for="other">Strongly Agree</label>
+    </div>
+      </form> 
+    </div>
+
+
+    <div class="paOrig">
+        <p>3.	Do you agree that honesty and integrity is a thing of the past; it is no more relevant in the world?</p>
+        <form>
+            <div  class="formRadioCover" class="formA">
+            <input type="radio" name="gender" value="SD">
+            <label for="male">Strongly Disagree</label><br>
+            <input type="radio" name="gender" value="Disagree">
+            <label for="female">Disagree</label><br>
+            <input type="radio" name="gender" value="Nutral">
+            <label for="other">Neutral</label>
+            <input type="radio" name="gender" value="Agree">
+            <label for="other">Agree</label>
+            <input type="radio"  name="gender" value="Agree">
+            <label for="other">Strongly Agree</label>
+        </div>
+          </form> 
+        </div>
+
+
+        <div class="paOrig">
+            <p>4.	If I am fortunate to get an opportunity today that made me rich, will you agree that such a reward of hard work and diligence is what made me? </p>
+            <form>
+                <div  class="formRadioCover" class="formA">
+                <input type="radio" name="gender" value="SD">
+                <label for="male">Strongly Disagree</label><br>
+                <input type="radio" name="gender" value="Disagree">
+                <label for="female">Disagree</label><br>
+                <input type="radio" name="gender" value="Nutral">
+                <label for="other">Neutral</label>
+                <input type="radio" name="gender" value="Agree">
+                <label for="other">Agree</label>
+                <input type="radio"  name="gender" value="Agree">
+                <label for="other">Strongly Agree</label>
+            </div>
+              </form> 
+            </div>
+
+
+        <div class="paOrig">
+                <p>5.	Do you agree that having money is the most important in life?</p>
+                <form>
+                    <div  class="formRadioCover" class="formA">
+                    <input type="radio" name="gender" value="SD">
+                    <label for="male">Strongly Disagree</label><br>
+                    <input type="radio" name="gender" value="Disagree">
+                    <label for="female">Disagree</label><br>
+                    <input type="radio" name="gender" value="Nutral">
+                    <label for="other">Neutral</label>
+                    <input type="radio" name="gender" value="Agree">
+                    <label for="other">Agree</label>
+                    <input type="radio"  name="gender" value="Agree">
+                    <label for="other">Strongly Agree</label>
+                </div>
+                  </form> 
+                </div>
+
+
+                <div class="paOrig">
+                    <p>6.	Do you agree with “everyone is born to succeed and not to be a slave to the others”</p>
+                    <form>
+                        <div  class="formRadioCover" class="formA">
+                        <input type="radio" name="gender" value="SD">
+                        <label for="male">Strongly Disagree</label><br>
+                        <input type="radio" name="gender" value="Disagree">
+                        <label for="female">Disagree</label><br>
+                        <input type="radio" name="gender" value="Nutral">
+                        <label for="other">Neutral</label>
+                        <input type="radio" name="gender" value="Agree">
+                        <label for="other">Agree</label>
+                        <input type="radio"  name="gender" value="Agree">
+                        <label for="other">Strongly Agree</label>
+                    </div>
+                      </form> 
+                    </div>
+
+
+                    <div class="paOrig">
+                        <p>7.	Do you accept the fact that nothing is possible to change without an action?</p>
+                        <form>
+                            <div  class="formRadioCover" class="formA">
+                            <input type="radio" name="gender" value="SD">
+                            <label for="male">Strongly Disagree</label><br>
+                            <input type="radio" name="gender" value="Disagree">
+                            <label for="female">Disagree</label><br>
+                            <input type="radio" name="gender" value="Nutral">
+                            <label for="other">Neutral</label>
+                            <input type="radio" name="gender" value="Agree">
+                            <label for="other">Agree</label>
+                            <input type="radio"  name="gender" value="Agree">
+                            <label for="other">Strongly Agree</label>
+                        </div>
+                          </form> 
+                        </div>
+
+
+                        <div class="paOrig">
+                            <p>8.	Do you accept the fact that you are who you are by what was passed on to you?</p>
+                            <form>
+                                <div  class="formRadioCover" class="formA">
+                                <input type="radio" name="gender" value="SD">
+                                <label for="male">Strongly Disagree</label><br>
+                                <input type="radio" name="gender" value="Disagree">
+                                <label for="female">Disagree</label><br>
+                                <input type="radio" name="gender" value="Nutral">
+                                <label for="other">Neutral</label>
+                                <input type="radio" name="gender" value="Agree">
+                                <label for="other">Agree</label>
+                                <input type="radio"  name="gender" value="Agree">
+                                <label for="other">Strongly Agree</label>
+                            </div>
+                              </form> 
+                            </div>
+
+
+                            <div class="paOrig">
+                                <p>9.	Do you accept the fact that being poor means being deprived of one’s right?</p>
+                                <form>
+                                    <div  class="formRadioCover" class="formA">
+                                    <input type="radio" name="gender" value="SD">
+                                    <label for="male">Strongly Disagree</label><br>
+                                    <input type="radio" name="gender" value="Disagree">
+                                    <label for="female">Disagree</label><br>
+                                    <input type="radio" name="gender" value="Nutral">
+                                    <label for="other">Neutral</label>
+                                    <input type="radio" name="gender" value="Agree">
+                                    <label for="other">Agree</label>
+                                    <input type="radio"  name="gender" value="Agree">
+                                    <label for="other">Strongly Agree</label>
+                                </div>
+                                  </form> 
+                                </div>
+
+
+                                <div class="paOrig">
+                                    <p>10.	Do you agree that everyone should be loved despite religion, ethnic, social status, personal achievement?</p>
+                                    <form>
+                                        <div  class="formRadioCover" class="formA">
+                                        <input type="radio" name="gender" value="SD">
+                                        <label for="male">Strongly Disagree</label><br>
+                                        <input type="radio" name="gender" value="Disagree">
+                                        <label for="female">Disagree</label><br>
+                                        <input type="radio" name="gender" value="Nutral">
+                                        <label for="other">Neutral</label>
+                                        <input type="radio" name="gender" value="Agree">
+                                        <label for="other">Agree</label>
+                                        <input type="radio"  name="gender" value="Agree">
+                                        <label for="other">Strongly Agree</label>
+                                    </div>
+                                      </form> 
+                                    </div>
+                                    <button id="buttonNext0" class="buttonNext">
+                                        Submit
+                                    </button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="origCommunityAssessmentCover" class="allAssess_">
+    <div class="paOrig">
+<p>1.	Do you contribute financially to help develop your community?</p>
+<form>
+    <div  class="formRadioCover" class="formA">
+    <input type="radio" name="gender" value="SD">
+    <label for="male">Yes</label><br>
+    <input type="radio" name="gender" value="Disagree">
+    <label for="female">No</label><br>
+    <input type="radio" name="gender" value="Nutral">
+    <label for="other">Not really</label>
+</div>
+  </form> 
+</div>
+
+
+<div class="paOrig">
+    <p>2.	Do you volunteer your time to help develop your community?</p>
+    <form>
+        <div  class="formRadioCover" class="formA">
+            <input type="radio" name="gender" value="SD">
+            <label for="male">Yes</label><br>
+            <input type="radio" name="gender" value="Disagree">
+            <label for="female">No</label><br>
+            <input type="radio" name="gender" value="Nutral">
+            <label for="other">Not really</label>
+    </div>
+      </form> 
+    </div>
+
+
+    <div class="paOrig">
+        <p>3.	Do you share relief materials to your community in times of hardship?</p>
+        <form>
+            <div  class="formRadioCover" class="formA">
+                <input type="radio" name="gender" value="SD">
+                <label for="male">Yes</label><br>
+                <input type="radio" name="gender" value="Disagree">
+                <label for="female">No</label><br>
+                <input type="radio" name="gender" value="Nutral">
+                <label for="other">Not really</label>
+        </div>
+          </form> 
+        </div>
+
+
+        <div class="paOrig">
+            <p>4.	Do you attend regular community development meeting?</p>
+            <form>
+                <div  class="formRadioCover" class="formA">
+                    <input type="radio" name="gender" value="SD">
+                    <label for="male">Yes</label><br>
+                    <input type="radio" name="gender" value="Disagree">
+                    <label for="female">No</label><br>
+                    <input type="radio" name="gender" value="Nutral">
+                    <label for="other">Not really</label>
+            </div>
+              </form> 
+            </div>
+
+
+        <div class="paOrig">
+                <p>5.	Do you abide with regulations that guide or influence behavior in a community?</p>
+                <form>
+                    <div  class="formRadioCover" class="formA">
+                        <input type="radio" name="gender" value="SD">
+                        <label for="male">Yes</label><br>
+                        <input type="radio" name="gender" value="Disagree">
+                        <label for="female">No</label><br>
+                        <input type="radio" name="gender" value="Nutral">
+                        <label for="other">Not really</label>
+                </div>
+                  </form> 
+                </div>
+
+
+                <div class="paOrig">
+                    <p>6.	Do you support any changes and do you work with others in community development</p>
+                    <form>
+                        <div  class="formRadioCover" class="formA">
+                            <input type="radio" name="gender" value="SD">
+                            <label for="male">Yes</label><br>
+                            <input type="radio" name="gender" value="Disagree">
+                            <label for="female">No</label><br>
+                            <input type="radio" name="gender" value="Nutral">
+                            <label for="other">Not really</label>
+                    </div>
+                      </form> 
+                    </div>
+
+
+                    <div class="paOrig">
+                        <p>7.	Do you take action that supports community development despite protocols delaying</p>
+                        <form>
+                            <div  class="formRadioCover" class="formA">
+                                <input type="radio" name="gender" value="SD">
+                                <label for="male">Yes</label><br>
+                                <input type="radio" name="gender" value="Disagree">
+                                <label for="female">No</label><br>
+                                <input type="radio" name="gender" value="Nutral">
+                                <label for="other">Not really</label>
+                        </div>
+                          </form> 
+                        </div>
+
+
+                        <div class="paOrig">
+                            <p>8.	Do you support community development if administration roles are not put in place?</p>
+                            <form>
+                                <div  class="formRadioCover" class="formA">
+                                    <input type="radio" name="gender" value="SD">
+                                    <label for="male">Yes</label><br>
+                                    <input type="radio" name="gender" value="Disagree">
+                                    <label for="female">No</label><br>
+                                    <input type="radio" name="gender" value="Nutral">
+                                    <label for="other">Not really</label>
+                            </div>
+                              </form> 
+                            </div>
+
+
+                            <div class="paOrig">
+                                <p>9.	Do you support community development if unclear terms and corrupt practice are found among the leaders or elders in the community?</p>
+                                <form>
+                                    <div  class="formRadioCover" class="formA">
+                                        <input type="radio" name="gender" value="SD">
+                                        <label for="male">Yes</label><br>
+                                        <input type="radio" name="gender" value="Disagree">
+                                        <label for="female">No</label><br>
+                                        <input type="radio" name="gender" value="Nutral">
+                                        <label for="other">Not really</label>
+                                </div>
+                                  </form> 
+                                </div>
+
+
+                                <div class="paOrig">
+                                    <p>10.	Do you provide services that are beneficiary to your community?</p>
+                                    <form>
+                                        <div  class="formRadioCover" class="formA">
+                                            <input type="radio" name="gender" value="SD">
+                                            <label for="male">Yes</label><br>
+                                            <input type="radio" name="gender" value="Disagree">
+                                            <label for="female">No</label><br>
+                                            <input type="radio" name="gender" value="Nutral">
+                                            <label for="other">Not really</label>
+                                        </div>
+                                      </form> 
+                                    </div>
+</div>
+
+
+
+
+
+
+
+<div id="origHistoricalAss_" class="allAssess_">
+    <div class="paOrig">
+<p>1.	Do you think the first civilized country in the world Egypt had Leadership problems due to failure to transcend from Traditional leadership model to  Servant Leadership model.</p>
+<form>
+    <div  class="formRadioCover" class="formA">
+    <input type="radio" name="gender" value="SD">
+    <label for="male">Yes</label><br>
+    <input type="radio" name="gender" value="Disagree">
+    <label for="female">No</label><br>
+    <input type="radio" name="gender" value="Nutral">
+    <label for="other">Not really</label>
+</div>
+  </form> 
+</div>
+
+
+<div class="paOrig">
+    <p>2.	Do you accept the fact that Africa was punished due to the long year’s generation curse, as a result of harsh climate?</p>
+    <form>
+        <div  class="formRadioCover" class="formA">
+            <input type="radio" name="gender" value="SD">
+            <label for="male">Yes</label><br>
+            <input type="radio" name="gender" value="Disagree">
+            <label for="female">No</label><br>
+            <input type="radio" name="gender" value="Nutral">
+            <label for="other">Not really</label>
+    </div>
+      </form> 
+    </div>
+
+
+    <div class="paOrig">
+        <p>3.	Do you believe that Africa failed to develop due to failed leadership?</p>
+        <form>
+            <div  class="formRadioCover" class="formA">
+                <input type="radio" name="gender" value="SD">
+                <label for="male">Yes</label><br>
+                <input type="radio" name="gender" value="Disagree">
+                <label for="female">No</label><br>
+                <input type="radio" name="gender" value="Nutral">
+                <label for="other">Not really</label>
+        </div>
+          </form> 
+        </div>
+
+
+        <div class="paOrig">
+            <p>4.	Do you agree on the adaptation of the Africa people within their environment to fortress peace, progress and equality?</p>
+            <form>
+                <div  class="formRadioCover" class="formA">
+                    <input type="radio" name="gender" value="SD">
+                    <label for="male">Strongly Disagree</label><br>
+                    <input type="radio" name="gender" value="Disagree">
+                    <label for="female">Disagree</label><br>
+                    <input type="radio" name="gender" value="Nutral">
+                    <label for="other">Neutral</label>
+                    <input type="radio" name="gender" value="Agree">
+                    <label for="other">Agree</label>
+                    <input type="radio"  name="gender" value="Agree">
+                    <label for="other">Strongly Agree</label>
+                </div>
+              </form> 
+            </div>
+
+
+        <div class="paOrig">
+                <p>5.	Do you agree that different ethnic group is the root cause of failed leadership in Africa</p>
+                <form>
+                    <div  class="formRadioCover" class="formA">
+                        <input type="radio" name="gender" value="SD">
+                        <label for="male">Strongly Disagree</label><br>
+                        <input type="radio" name="gender" value="Disagree">
+                        <label for="female">Disagree</label><br>
+                        <input type="radio" name="gender" value="Nutral">
+                        <label for="other">Neutral</label>
+                        <input type="radio" name="gender" value="Agree">
+                        <label for="other">Agree</label>
+                        <input type="radio"  name="gender" value="Agree">
+                        <label for="other">Strongly Agree</label>
+                    </div>
+                  </form> 
+                </div>
+
+
+                <div class="paOrig">
+                    <p>6.	Do you agree that Africa not having an exact record of history could have caused improvised and stagnant economy progression?</p>
+                    <form>
+                        <div  class="formRadioCover" class="formA">
+                            <input type="radio" name="gender" value="SD">
+                            <label for="male">Strongly Disagree</label><br>
+                            <input type="radio" name="gender" value="Disagree">
+                            <label for="female">Disagree</label><br>
+                            <input type="radio" name="gender" value="Nutral">
+                            <label for="other">Neutral</label>
+                            <input type="radio" name="gender" value="Agree">
+                            <label for="other">Agree</label>
+                            <input type="radio"  name="gender" value="Agree">
+                            <label for="other">Strongly Agree</label>
+                        </div>
+                      </form> 
+                    </div>
+
+
+                    <div class="paOrig">
+                        <p>7.	Do you agree that our colonials made us worse than before?</p>
+                        <form>
+                            <div  class="formRadioCover" class="formA">
+                                <input type="radio" name="gender" value="SD">
+                                <label for="male">Strongly Disagree</label><br>
+                                <input type="radio" name="gender" value="Disagree">
+                                <label for="female">Disagree</label><br>
+                                <input type="radio" name="gender" value="Nutral">
+                                <label for="other">Neutral</label>
+                                <input type="radio" name="gender" value="Agree">
+                                <label for="other">Agree</label>
+                                <input type="radio"  name="gender" value="Agree">
+                                <label for="other">Strongly Agree</label>
+                            </div>
+                          </form> 
+                        </div>
+
+
+                        <div class="paOrig">
+                            <p>8.	In ten years from now, how will you predict Africa future if Africa fails to rebuild Africa values?</p>
+                            <form>
+                                <div  class="formRadioCover" class="formA">
+                                    <input type="radio" name="gender" value="SD">
+                                    <label for="male">Strongly Disagree</label><br>
+                                    <input type="radio" name="gender" value="Disagree">
+                                    <label for="female">Disagree</label><br>
+                                    <input type="radio" name="gender" value="Nutral">
+                                    <label for="other">Neutral</label>
+                                    <input type="radio" name="gender" value="Agree">
+                                    <label for="other">Agree</label>
+                                    <input type="radio"  name="gender" value="Agree">
+                                    <label for="other">Strongly Agree</label>
+                                </div>
+                              </form> 
+                            </div>
+
+
+                            <div class="paOrig">
+                                <p>9.	Do you agree that the way forward in Africa reformation lies in instilling core moral values in all institution?</p>
+                                <form>
+                                    <div  class="formRadioCover" class="formA">
+                                        <input type="radio" name="gender" value="SD">
+                                        <label for="male">Strongly Disagree</label><br>
+                                        <input type="radio" name="gender" value="Disagree">
+                                        <label for="female">Disagree</label><br>
+                                        <input type="radio" name="gender" value="Nutral">
+                                        <label for="other">Neutral</label>
+                                        <input type="radio" name="gender" value="Agree">
+                                        <label for="other">Agree</label>
+                                        <input type="radio"  name="gender" value="Agree">
+                                        <label for="other">Strongly Agree</label>
+                                    </div>
+                                  </form> 
+                                </div>
+
+
+                                <div class="paOrig">
+                                    <p>10.	Do you agree that poverty is the cause of corruption, hatred and illegal emigration in Africa?</p>
+                                    <form>
+                                        <div  class="formRadioCover" class="formA">
+                                            <input type="radio" name="gender" value="SD">
+                                            <label for="male">Strongly Disagree</label><br>
+                                            <input type="radio" name="gender" value="Disagree">
+                                            <label for="female">Disagree</label><br>
+                                            <input type="radio" name="gender" value="Nutral">
+                                            <label for="other">Neutral</label>
+                                            <input type="radio" name="gender" value="Agree">
+                                            <label for="other">Agree</label>
+                                            <input type="radio"  name="gender" value="Agree">
+                                            <label for="other">Strongly Agree</label>
+                                        </div>
+                                      </form> 
+                                    </div>
+</div>
+
+
+                                
+
+
+
+
+
+
+
+
+<!-- <div id="origLeadershipAssCover" class="allAssess_">
+    <div class="paOrig">
+<p>1.	Do you agree that Leadership is not techniques, a style or the acquisition of skills, but a manifestation of codes of value?</p>
+<form>
+    <div  class="formRadioCover" class="formA">
+    <input type="radio" name="gender" value="SD">
+    <label for="male">Yes</label><br>
+    <input type="radio" name="gender" value="Disagree">
+    <label for="female">No</label><br>
+    <input type="radio" name="gender" value="Nutral">
+    <label for="other">Not really</label>
+</div>
+  </form> 
+</div>
+
+
+<div class="paOrig">
+    <p>2.	Do you agree that true leaders influence their environments more than their environments influence them?</p>
+    <form>
+        <div  class="formRadioCover" class="formA">
+            <input type="radio" name="gender" value="SD">
+            <label for="male">Yes</label><br>
+            <input type="radio" name="gender" value="Disagree">
+            <label for="female">No</label><br>
+            <input type="radio" name="gender" value="Nutral">
+            <label for="other">Not really</label>
+    </div>
+      </form> 
+    </div>
+
+
+    <div class="paOrig">
+        <p>3.	Some people believe that leaders are born, so when they discover they are born to lead, they must also understand that they are born to serve.</p>
+        <form>
+            <div  class="formRadioCover" class="formA">
+                <input type="radio" name="gender" value="SD">
+                <label for="male">Yes</label><br>
+                <input type="radio" name="gender" value="Disagree">
+                <label for="female">No</label><br>
+                <input type="radio" name="gender" value="Nutral">
+                <label for="other">Not really</label>
+        </div>
+          </form> 
+        </div>
+
+
+        <div class="paOrig">
+            <p>4.	Do you agree that Leadership is the capacity to influence others through inspiration motivated by a passion, generated by a vision produced by a conviction, ignited by a purpose?</p>
+            <form>
+                <div  class="formRadioCover" class="formA">
+                    <input type="radio" name="gender" value="SD">
+                    <label for="male">Yes</label><br>
+                    <input type="radio" name="gender" value="Disagree">
+                    <label for="female">No</label><br>
+                    <input type="radio" name="gender" value="Nutral">
+                    <label for="other">Not really</label>
+            </div>
+              </form> 
+            </div>
+
+
+        <div class="paOrig">
+                <p>5.	Do you agree there is a need for new leadership thinking and a new vision of organizations that place service to others over self-interest and self-promotion?</p>
+                <form>
+                    <div  class="formRadioCover" class="formA">
+                        <input type="radio" name="gender" value="SD">
+                        <label for="male">Yes</label><br>
+                        <input type="radio" name="gender" value="Disagree">
+                        <label for="female">No</label><br>
+                        <input type="radio" name="gender" value="Nutral">
+                        <label for="other">Not really</label>
+                </div>
+                  </form> 
+                </div>
+
+
+                <div class="paOrig">
+                    <p>6.	Do you agree that Leadership is both an aptitude and an attitude? No matter how much intellectual ability you have if you don’t have the right attitudes, your ability doesn’t mean anything.</p>
+                    <form>
+                        <div  class="formRadioCover" class="formA">
+                            <input type="radio" name="gender" value="SD">
+                            <label for="male">Yes</label><br>
+                            <input type="radio" name="gender" value="Disagree">
+                            <label for="female">No</label><br>
+                            <input type="radio" name="gender" value="Nutral">
+                            <label for="other">Not really</label>
+                    </div>
+                      </form> 
+                    </div>
+
+
+                    <div class="paOrig">
+                        <p>7.	Do you agree that a true leader is always conscious that he is not a law unto himself but should uphold established laws and treat others with respects as people made in the image and likeness of the creator?</p>
+                        <form>
+                            <div  class="formRadioCover" class="formA">
+                                <input type="radio" name="gender" value="SD">
+                                <label for="male">Yes</label><br>
+                                <input type="radio" name="gender" value="Disagree">
+                                <label for="female">No</label><br>
+                                <input type="radio" name="gender" value="Nutral">
+                                <label for="other">Not really</label>
+                        </div>
+                          </form> 
+                        </div>
+
+
+                        <div class="paOrig">
+                            <p>8.	Do you agree that Africa needs leaders that are rooted in our most ethical and moral teachings, leaders that work because it is based on how people need to be treated, motivated and led?</p>
+                            <form>
+                                <div  class="formRadioCover" class="formA">
+                                    <input type="radio" name="gender" value="SD">
+                                    <label for="male">Yes</label><br>
+                                    <input type="radio" name="gender" value="Disagree">
+                                    <label for="female">No</label><br>
+                                    <input type="radio" name="gender" value="Nutral">
+                                    <label for="other">Not really</label>
+                            </div>
+                              </form> 
+                            </div>
+
+
+                            <div class="paOrig">
+                                <p>9.	Do you agree that true leadership is not controlled or manipulation of others, but it is other people’s willful submission of their authority to yours, motivated by inspiration?</p>
+                                <form>
+                                    <div  class="formRadioCover" class="formA">
+                                        <input type="radio" name="gender" value="SD">
+                                        <label for="male">Yes</label><br>
+                                        <input type="radio" name="gender" value="Disagree">
+                                        <label for="female">No</label><br>
+                                        <input type="radio" name="gender" value="Nutral">
+                                        <label for="other">Not really</label>
+                                </div>
+                                  </form> 
+                                </div>
+
+
+                                <div class="paOrig">
+                                    <p>10.	Do you agree that true leaders are leaders who love their followers more than they love their goals and objectives?</p>
+                                    <form>
+                                        <div  class="formRadioCover" class="formA">
+                                            <input type="radio" name="gender" value="SD">
+                                            <label for="male">Yes</label><br>
+                                            <input type="radio" name="gender" value="Disagree">
+                                            <label for="female">No</label><br>
+                                            <input type="radio" name="gender" value="Nutral">
+                                            <label for="other">Not really</label>
+                                        </div>
+                                      </form> 
+                                    </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="assessmentCover">
+    <div id="Assessment">Assessment</div>
+    <div id="lorem0" class="loremC"><p class="loremChild">1. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+         Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+          dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+        sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    </div>
+        
+        
+        <form>
+            <div  id="form0" class="formA">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </div>
+          </form> 
+
+          <div id="lorem1" class="loremC"><p class="loremChild">2. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+             Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+            sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div>
+            
+            
+            <form>
+                <div  id="form1" class="formA">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+              </form> 
+
+              <div id="lorem2" class="loremC"><p class="loremChild">3. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                 Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                  dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
+                
+                
+                <form>
+                    <div  id="form2" class="formA">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+                  </form> 
+
+                  <div id="lorem3" class="loremC"><p class="loremChild">4. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                     Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                     laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                      dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                      fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                    sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                </div>
+                    
+                    
+                    <form>
+                        <div  id="form3" class="formA">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                      </form> 
+
+                       <div id="lorem4" class="loremC"><p class="loremChild">5. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                     Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                     laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                      dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                      fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                    sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                </div>
+                    
+                    
+                    <form>
+                        <div  id="form4" class="formA">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                      </form> 
+
+                      <div id="cover_box">
+                          <div id="box_cover">
+                          <div class="box0" style="color: white; background-color: #2980b9;">1</div>
+                          <div class="box0">2</div>
+                          <div class="box0">3</div>
+                          <div class="box0">4</div>
+                        </div>
+                        </div>
+
+                        <div id="prev">Prev</div>
+                        <div id="Nxt">Next</div>
+                      </div>
+
+                      <div id="certificate">
+                          <a href="certificate.html" class="a_tagg">
+                          <h3 class="certtext"> Click to Print</h3>
+                          <img src="Img/certificate.png" class="certi" alt="certificate" />
+                        </a>
+                      </div>
 <script>
+    buttonNext0 = document.querySelector("#buttonNext0");
+    buttonNext1 = document.querySelector("#buttonNext1");
+    buttonNext2 = document.querySelector("#buttonNext2");
+    buttonNext3 = document.querySelector("#buttonNext3");
+    buttonNext4 = document.querySelector("#buttonNext4");
+    buttonNext5 = document.querySelector("#buttonNext5");
     downarrow = document.querySelector(".downarrow");
     back0000 = document.querySelector("#back0000");
     side0 = document.querySelector("#side0");
@@ -315,22 +1237,28 @@
     Pledge = document.querySelector(".Pledge");
     pledg3 = document.querySelector(".pledg3");
     Action = document.querySelector("#Action");
+    assessmentCover = document.querySelector("#assessmentCover");
     cover_register = document.querySelector("#cover_register");
     cover_div0 = document.querySelector(".cover_div0");
     title00 = document.querySelector("#title00");
     cover_campaign = document.querySelector(".cover_campaign");
+    PAssess = document.querySelector("#PAssess");
+    origPersonalAssCover = document.querySelector("#origPersonalAssCover");
+    origCommunityAssessmentCover = document.querySelector("#origCommunityAssessmentCover");
+    origHistoricalAss = document.querySelector("#origHistoricalAss");
+    assessmentDashBoard = document.querySelector("#assessmentDashBoard");
+    CAssess = document.querySelector("#CAssess");
+    HisAss_ = document.querySelector("#HisAss_");
+    certificate = document.querySelector("#certificate");
     var range;
 
     
-
+   
     downarrow.addEventListener("click", addy);
     back0000.addEventListener("click", dady);
     side0.addEventListener("click", EnableSide0);
-    side1.addEventListener("click", EnableSide1);
-    side2.addEventListener("click", EnableSide2);
-    side3.addEventListener("click", EnableSide3);
-    side4.addEventListener("click", EnableSide4);
-    side5.addEventListener("click", EnableSide5);
+   
+    
     value.addEventListener("click", dady);
     Codes.addEventListener("click", dady);
     Pledge.addEventListener("click", dady);
@@ -338,9 +1266,120 @@
     cover_div0.addEventListener("click", dady);
     title00.addEventListener("click", dady);
     cover_campaign.addEventListener("click", dady);
-    
+    PAssess.addEventListener("click", EnablePersonnalAss);
+    CAssess.addEventListener("click", EnableCAssess);
+    HisAss_.addEventListener("click", EnableHassess_);
+    buttonNext0.addEventListener("click", Activate_side1);
+    buttonNext1.addEventListener("click", Activate_side2);
+    buttonNext2.addEventListener("click", Activate_side3);
+    buttonNext3.addEventListener("click", Activate_side4);
+    buttonNext4.addEventListener("click", Activate_side5);
+    buttonNext5.addEventListener("click", Activate_side6);
+
+    function Activate_side1(){
+        side1.style.opacity = "1.0";
+        side1.style.cursor = "pointer";
+        assessmentDashBoard.style.display = "none";
+        origPersonalAssCover.style.display = "none";
+        value.style.display = "block";
+        side1.addEventListener("click", EnableSide1);
+        
+    }
+
+    function Activate_side2(){
+        side2.style.opacity = "1.0";
+        side2.style.cursor = "pointer";
+        value.style.display = "none";
+        Codes.style.display = "block";
+        side2.addEventListener("click", EnableSide2);
+    }
+
+    function Activate_side3(){
+        side3.style.opacity = "1.0";
+        side3.style.cursor = "pointer";
+        Codes.style.display = "none";
+        Pledge.style.display = "block";
+        side3.addEventListener("click", EnableSide3);
+    }
+
+    function Activate_side4(){
+        side4.style.opacity = "1.0";
+        side4.style.cursor = "pointer";
+        Pledge.style.display = "none";
+        Action.style.display = "block";
+        side4.addEventListener("click", EnableSide4);
+    }
+
+    function Activate_side5(){
+        side5.style.opacity = "1.0";
+        side5.style.cursor = "pointer";
+        Action.style.display = "none";
+        cover_campaign.style.display = "block";
+        side5.addEventListener("click", EnableSide5);
+    }
 
 
+    function Activate_side6(){
+        side7.style.opacity = "1.0";
+        side7.style.cursor = "pointer";
+        cover_campaign.style.display = "none";
+        certificate.style.display = "block";
+        side7.addEventListener("click", EnableSide7);
+    }
+
+function EnablePersonnalAss(){
+    origPersonalAssCover.style.display = "block";
+    origCommunityAssessmentCover.style.display = "none";
+    origHistoricalAss_.style.display = "none";
+    assessmentDashBoard.style.display = "none";
+    // assessmentCover.style.display = "none";
+        value.style.display = "none";
+        Codes.style.display = "none";
+        Pledge.style.display = "none";
+        Action.style.display = "none";
+        cover_campaign.style.display = "none";
+        title00.style.display = "none";
+        cover_div0.style.display = "none";
+        // side4.style.display = "none";
+        // side5.style.display = "none";
+        // side6.style.display = "none";
+}
+
+    function EnableCAssess(){
+        origPersonalAssCover.style.display = "none";
+        origCommunityAssessmentCover.style.display = "block";
+        origHistoricalAss_.style.display = "none";
+    assessmentDashBoard.style.display = "none";
+    assessmentCover.style.display = "none";
+        value.style.display = "none";
+        Codes.style.display = "none";
+        Pledge.style.display = "none";
+        Action.style.display = "none";
+        cover_campaign.style.display = "none";
+        title00.style.display = "none";
+        cover_div0.style.display = "none";
+        // side4.style.display = "none";
+        // side5.style.display = "none";
+        // side6.style.display = "none";
+    }
+
+        function EnableHassess_(){
+            origPersonalAssCover.style.display = "none";
+        origCommunityAssessmentCover.style.display = "none";
+        origHistoricalAss_.style.display = "block";
+    assessmentDashBoard.style.display = "none";
+    assessmentCover.style.display = "none";
+        value.style.display = "none";
+        Codes.style.display = "none";
+        Pledge.style.display = "none";
+        Action.style.display = "none";
+        cover_campaign.style.display = "none";
+        title00.style.display = "none";
+        cover_div0.style.display = "none";
+        // side4.style.display = "none";
+        // side5.style.display = "none";
+        // side6.style.display = "none";
+        }
     function addy(){
         liBox.style.display = "block";
     }
@@ -349,51 +1388,66 @@
     }
     
     function EnableSide0(){
+        assessmentDashBoard.style.display = "block";
+        value.style.display = "none";
+        Codes.style.display = "none";
+        Pledge.style.display = "none";
+        Action.style.display = "none";
+        cover_campaign.style.display = "none";
+        title00.style.display = "none";
+        cover_div0.style.display = "none";
+        certificate.style.display ="none";
+    }
+
+    function EnableSide1(){
+        assessmentDashBoard.style.display = "none";
         value.style.display = "block";
         Codes.style.display = "none";
         Pledge.style.display = "none";
         Action.style.display = "none";
+        cover_campaign.style.display = "none";
         title00.style.display = "none";
         cover_div0.style.display = "none";
-        // side4.style.display = "none";
-        // side5.style.display = "none";
-        // side6.style.display = "none";
+        certificate.style.display ="none";
     }
 
-    function EnableSide1(){
+    function EnableSide2(){
+        assessmentDashBoard.style.display = "none";
         value.style.display = "none";
         Codes.style.display = "block";
         Pledge.style.display = "none";
         Action.style.display = "none";
+        cover_campaign.style.display = "none";
         title00.style.display = "none";
         cover_div0.style.display = "none";
-        // side5.style.display = "none";
-        // side6.style.display = "none";
+        certificate.style.display ="none";
     }
 
-    function EnableSide2(){
+    function EnableSide3(){
+        assessmentDashBoard.style.display = "none";
         value.style.display = "none";
         Codes.style.display = "none";
         Pledge.style.display = "block";
         Action.style.display = "none";
+        cover_campaign.style.display = "none";
         title00.style.display = "none";
         cover_div0.style.display = "none";
-        // side5.style.display = "none";
-        // side6.style.display = "none";
+        certificate.style.display ="none";
     }
 
-    function EnableSide3(){
+    function EnableSide4(){
+        assessmentDashBoard.style.display = "none";
         value.style.display = "none";
         Codes.style.display = "none";
         Pledge.style.display = "none";
         Action.style.display = "block";
+        cover_campaign.style.display = "none";
         title00.style.display = "none";
         cover_div0.style.display = "none";
-        // side5.style.display = "none";
-        // side6.style.display = "none";
+        certificate.style.display ="none";
     }
-
-    function EnableSide4(){
+    function EnableSide5(){
+        assessmentDashBoard.style.display = "none";
         value.style.display = "none";
         Codes.style.display = "none";
         Pledge.style.display = "none";
@@ -401,17 +1455,32 @@
         cover_campaign.style.display = "block";
         title00.style.display = "none";
         cover_div0.style.display = "none";
-        // side6.style.display = "none";
+        certificate.style.display ="none";
     }
-    function EnableSide5(){
+
+    function EnableSide6(){
+        assessmentDashBoard.style.display = "none";
         value.style.display = "none";
         Codes.style.display = "none";
         Pledge.style.display = "none";
         Action.style.display = "none";
+        cover_campaign.style.display = "none";
         title00.style.display = "block";
         cover_div0.style.display = "block";
-        // side5.style.display = "none";
-        // side6.style.display = "none";
+        certificate.style.display ="none";
+    }
+
+
+    function EnableSide7(){
+        assessmentDashBoard.style.display = "none";
+        value.style.display = "none";
+        Codes.style.display = "none";
+        Pledge.style.display = "none";
+        Action.style.display = "none";
+        cover_campaign.style.display = "none";
+        title00.style.display = "none";
+        cover_div0.style.display = "none";
+        certificate.style.display ="block";
     }
 
    

@@ -1,3 +1,6 @@
-app/__pycache__/*.pyc
-app/migrations/__pycache__/*.pyc
-
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py

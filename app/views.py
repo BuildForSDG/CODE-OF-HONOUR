@@ -15,7 +15,7 @@ class HomePage(TemplateView):
 
 
 class AssessmentView(TemplateView):
-	template_name = 'app/assessment.html'
+	template_name = 'app/dashboard.html'
 
 
 class StudentListView(ListView):

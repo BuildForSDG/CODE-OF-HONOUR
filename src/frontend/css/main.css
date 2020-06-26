@@ -88,4 +88,27 @@ header nav li:last-child {
   color: grey;
 }
 
+/* Split */
+.split{
+  background-color:  #00689d;
+  color: white;
+  padding: 2em;
+  font-size: 1rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ }
 
+ /* Next */
+ .next{
+   padding: 2em;
+   font-size: 1rem;
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ }
+
+ /* Jumbotron margin removal */
+ .jumbotron-mf{
+   margin-bottom: 0px;
+ }
+
+ .imgc{
+   max-height: 200px;
+ }

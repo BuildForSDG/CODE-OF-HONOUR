@@ -63,21 +63,24 @@ header nav li:last-child {
   margin-bottom: 50%;
 }
 
-@media only screen and (max-width: 768px){
-  .jumbotron{
-      margin-top: 10%;
+@media only screen and (max-width: 768px) {
+  .jumbotron {
+    margin-top: 10%;
   }
 }
-/*meet the team section*/
+
+/* meet the team section */
 .team-member {
   margin-bottom: 3rem;
   text-align: center;
 }
+
 .team-member img {
   width: 14rem;
   height: 14rem;
   border: 0.5rem solid rgba(0, 0, 0, 0.1);
 }
+
 .team-member h4 {
   margin-top: 1.5rem;
   margin-bottom: 0;
@@ -89,26 +92,30 @@ header nav li:last-child {
 }
 
 /* Split */
-.split{
-  background-color:  #00689d;
+.split {
+  background-color: #00689d;
   color: white;
   padding: 2em;
   font-size: 1rem;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
- }
+}
 
- /* Next */
- .next{
-   padding: 2em;
-   font-size: 1rem;
-   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
- }
+/* Next */
+.next {
+  padding: 2em;
+  font-size: 1rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
- /* Jumbotron margin removal */
- .jumbotron-mf{
-   margin-bottom: 0px;
- }
+/* Jumbotron margin removal */
+.jumbotron-mf {
+  margin-bottom: 0;
+}
 
- .imgc{
-   max-height: 200px;
- }
+.imgc {
+  max-height: 200px;
+}
+
+blockquote{
+  padding-left: 10%;
+}

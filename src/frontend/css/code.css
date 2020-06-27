@@ -1,263 +1,301 @@
-.cover_campaign{
-    position: absolute;
-    top:100px;
-    left: 200px;
-    width: 1000px;
-    height: 1000px;
-    z-index: 13;
-    display: none;
-}
-.title{
-    text-align:center;
-}
-.code-cover{
-    width:900px;
-    text-align:center;
-
-}
-#code{
-overflow-y:hidden;
-margin-left:60px;
-display: inline-block;
-width:600px;
-height:50px;
-background-color:#bdc3c7;
-padding-left:10px;
-padding-bottom:5px;
-padding-top:1px;
-border-radius: 10px;
-}
-#code h3{
-    text-align: left;
-}
-.mother_cover0{
-    display: flex;
-    justify-content: space-around;
-    margin-left: 60px;
-    margin-top:50px;
-}
-#mother{
-    width:240px;
-    height:250px;
-    padding:10px;
-     background-color:orange;
-}
-.student{
-    background-color:orange;
-    width:100%;
-    height:49px; 
- border-bottom: 1px solid white;
-    border-bottom-color:white;
-    color:white;
-    overflow-y: hidden;
-}
-.stu001{
-    margin-left:15px;
-    color:white;
-}
-.text{
-    margin-left:15px;
-    color:white;
-    font-size:16.5px;
-}
-.font{
-    margin-top:20px;
-    background-color:orange;
-}
-.square{
-color:white;
-    font-size:30px;
-}
-#mother1{
-    width:240px;
-    height:250px;
-    padding:10px;
-     background-color:green;
-}
-.student1{
-    background-color:green;
-    height:49px;
- border-bottom: 1px solid white;
-    border-bottom-color:white;
-    color:white;
-    width:100%;
-    overflow-y: hidden;
-}
-.stu0011{
-    margin-left:15px;
-    color:white;
-}
-.text1{
-    margin-left:15px;
-    color:white;
-    font-size:16.5px;
-}
-.font1{
-    margin-top:20px;
-    background-color:green;
-}
-.square1{
-color:white;
-    font-size:30px;
-}
-#mother2{
-    width:240px;
-    height:250px;
-    padding:10px;
-     background-color:#12CBC4;
-}
-.student2{
-    background-color:#12CBC4;
-    height:49px;
-    border-bottom: 1px solid white;
-    border-bottom-color:white;
-    color:white;
-    width: 100%;
-    overflow-y: hidden;
-}
-.stu0012{
-    margin-left:15px;
-    color:white;
-}
-.text2{
-    margin-left:15px;
-    color:white;
-    font-size:16.5px;
-}
-.font2{
-    margin-top:20px;
-    background-color:#12CBC4;
-}
-.square2{
-    color:white;
-    font-size:30px;
-}
-#mother3{
-    width:240px;
-    height:250px;
-    padding:10px;
-     background-color:blue;
-}
-.student3{
-    background-color:blue;
-    width:100%;
-    height:49px;
- border-bottom: 1px solid white;
-    border-bottom-color:white;
-    color:white;
-    overflow-y: hidden;
-}
-.stu0013{
-    margin-left:15px;
-    color:white;
-}
-.text3{
-    margin-left:15px;
-    color:white;
-    font-size:16.5px;
-}
-.font3{
-    margin-top:20px;
-    background-color:blue;
-}
-.square3{
-    color:white;
-    font-size:30px;
-}
-#mother4{
-    width:240px;
-    height:250px;
-    padding:10px;
-     background-color:rgb(161, 17, 161);
-}
-.student4{
-    background-color:rgb(161, 17, 161);
-    width:100%;
-    height:49px;
- border-bottom: 1px solid white;
-    border-bottom-color:white;
-    color:white;
-    overflow-y: hidden;
-}
-.stu0014{
-    margin-left:15px;
-    color:white;
-}
-.text4{
-    margin-left:15px;
-    color:white;
-    font-size:16.5px;
-}
-.font4{
-    margin-top:20px;
-   background-color:rgb(161, 17, 161);
-} 
-.square4{
-color:white;
-    font-size:30px;
+.cover_campaign {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  width: 1000px;
+  height: 1000px;
+  z-index: 13;
+  display: none;
 }
 
-#mother5{
-    width:240px;
-    height:250px;
-    padding:10px;
-     background-color:#B53471;
-}
-.student5{
-    background-color:#B53471;
-    width:100%;
-    height:49px;
- border-bottom: 1px solid white;
-    border-bottom-color:white;
-    color:white;
-    overflow-y: hidden;
-}
-.stu0015{
-    margin-left:15px;
-    color:white;
-}
-.text5{
-    margin-left:15px;
-    color:white;
-    font-size:16.5px;
+.title {
+  text-align: center;
 }
 
-#font5{
-    margin-top: 20px;
-    background-color:#B53471;
-    width: 15px;
-    height: 15px;
+.code-cover {
+  width: 900px;
+  text-align: center;
 }
-.square5{
-     color:white;
-     font-size:30px;
- }
+
+#code {
+  overflow-y: hidden;
+  margin-left: 60px;
+  display: inline-block;
+  width: 600px;
+  height: 50px;
+  background-color: #bdc3c7;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-top: 1px;
+  border-radius: 10px;
+}
+
+#code h3 {
+  text-align: left;
+}
+
+.mother_cover0 {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 60px;
+  margin-top: 50px;
+}
+
+#mother {
+  width: 240px;
+  height: 250px;
+  padding: 10px;
+  background-color: orange;
+}
+
+.student {
+  background-color: orange;
+  width: 100%;
+  height: 49px;
+  border-bottom: 1px solid white;
+  border-bottom-color: white;
+  color: white;
+  overflow-y: hidden;
+}
+
+.stu001 {
+  margin-left: 15px;
+  color: white;
+}
+
+.text {
+  margin-left: 15px;
+  color: white;
+  font-size: 16.5px;
+}
+
+.font {
+  margin-top: 20px;
+  background-color: orange;
+}
+
+.square {
+  color: white;
+  font-size: 30px;
+}
+
+#mother1 {
+  width: 240px;
+  height: 250px;
+  padding: 10px;
+  background-color: green;
+}
+
+.student1 {
+  background-color: green;
+  height: 49px;
+  border-bottom: 1px solid white;
+  border-bottom-color: white;
+  color: white;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.stu0011 {
+  margin-left: 15px;
+  color: white;
+}
+
+.text1 {
+  margin-left: 15px;
+  color: white;
+  font-size: 16.5px;
+}
+
+.font1 {
+  margin-top: 20px;
+  background-color: green;
+}
+
+.square1 {
+  color: white;
+  font-size: 30px;
+}
+
+#mother2 {
+  width: 240px;
+  height: 250px;
+  padding: 10px;
+  background-color: #12cbc4;
+}
+
+.student2 {
+  background-color: #12cbc4;
+  height: 49px;
+  border-bottom: 1px solid white;
+  border-bottom-color: white;
+  color: white;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.stu0012 {
+  margin-left: 15px;
+  color: white;
+}
+
+.text2 {
+  margin-left: 15px;
+  color: white;
+  font-size: 16.5px;
+}
+
+.font2 {
+  margin-top: 20px;
+  background-color: #12cbc4;
+}
+
+.square2 {
+  color: white;
+  font-size: 30px;
+}
+
+#mother3 {
+  width: 240px;
+  height: 250px;
+  padding: 10px;
+  background-color: blue;
+}
+
+.student3 {
+  background-color: blue;
+  width: 100%;
+  height: 49px;
+  border-bottom: 1px solid white;
+  border-bottom-color: white;
+  color: white;
+  overflow-y: hidden;
+}
+
+.stu0013 {
+  margin-left: 15px;
+  color: white;
+}
+
+.text3 {
+  margin-left: 15px;
+  color: white;
+  font-size: 16.5px;
+}
+
+.font3 {
+  margin-top: 20px;
+  background-color: blue;
+}
+
+.square3 {
+  color: white;
+  font-size: 30px;
+}
+
+#mother4 {
+  width: 240px;
+  height: 250px;
+  padding: 10px;
+  background-color: rgb(161, 17, 161);
+}
+
+.student4 {
+  background-color: rgb(161, 17, 161);
+  width: 100%;
+  height: 49px;
+  border-bottom: 1px solid white;
+  border-bottom-color: white;
+  color: white;
+  overflow-y: hidden;
+}
+
+.stu0014 {
+  margin-left: 15px;
+  color: white;
+}
+
+.text4 {
+  margin-left: 15px;
+  color: white;
+  font-size: 16.5px;
+}
+
+.font4 {
+  margin-top: 20px;
+  background-color: rgb(161, 17, 161);
+}
+
+.square4 {
+  color: white;
+  font-size: 30px;
+}
+
+#mother5 {
+  width: 240px;
+  height: 250px;
+  padding: 10px;
+  background-color: #b53471;
+}
+
+.student5 {
+  background-color: #b53471;
+  width: 100%;
+  height: 49px;
+  border-bottom: 1px solid white;
+  border-bottom-color: white;
+  color: white;
+  overflow-y: hidden;
+}
+
+.stu0015 {
+  margin-left: 15px;
+  color: white;
+}
+
+.text5 {
+  margin-left: 15px;
+  color: white;
+  font-size: 16.5px;
+}
+
+#font5 {
+  margin-top: 20px;
+  background-color: #b53471;
+  width: 15px;
+  height: 15px;
+}
+
+.square5 {
+  color: white;
+  font-size: 30px;
+}
+
 /* .botton-body{
     position:absolute;
     top:950px;
     left:60px;
 } */
-.botton{
-    background-color:green;
-    padding:15px;
-    color:white;
-    border-radius:10px;
-    
-}
-.prevbtn1{
-    background-color:green;
-    padding:25px;
-    padding-bottom: 10px;
-    padding-top:10px;
-    color:white;
-    border: none;
-    border-radius:10px;
-    margin-top: 50px;
+.botton {
+  background-color: green;
+  padding: 15px;
+  color: white;
+  border-radius: 10px;
 }
 
-.botton_cover009{
-    display: flex;
-    justify-content: space-between;
-    width: 1000px;
+.prevbtn1 {
+  background-color: green;
+  padding: 25px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-top: 50px;
 }
 
+.botton_cover009 {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+}

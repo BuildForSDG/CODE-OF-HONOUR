@@ -1,0 +1,659 @@
+ *{
+    overflow-x:hidden;   
+   }
+
+   a {
+    color: #0060B6;
+    text-decoration: none;
+}
+
+a:hover 
+{
+     color:gray; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+#dashboard__{
+        width: 100%;
+        background-color: white;
+}
+   #trustworthiness{
+       margin-top:130px;
+       margin-left: 200px;
+       width: 500px;
+       height: 60px;
+       border: 1px solid gray;
+       border-radius: 4px;
+       text-align: center;
+       padding: 20px;
+       opacity: 0.9;
+        background-image: linear-gradient(to right, #d63031 , #2d3436);
+   }
+
+   #trustworthiness:hover{
+    width: 470px;
+    height: 50px;
+    overflow-y: hidden;
+   }
+
+
+    #realCodes{
+        display: none;
+        width: 100%;
+        height: 800px;
+        justify-content: space-around;
+    }
+
+     #realCodeCover{
+        display: flex;
+    }
+
+    .Cdi{
+        /* flex-basis: 50%; */
+        width: 100%;
+        height: 800px;
+        text-align: center;
+    }
+    
+    .div1{
+        width: 100%;
+        height: auto;
+    }
+
+    .div1 img{
+        width: 280px;
+        height: 300px;
+        object-fit: contain;
+        display: inline-block;
+    }
+
+    .div2{
+        border: 1px solid gray;
+        width: 278px;
+        height: 200px;
+        margin-top: -62px;
+        margin-left: 26px;
+    }
+    #div2Repli{
+        margin-left: 272px;
+        margin-top: -5px;
+        width: 450px;
+    }
+
+    #div2Repli p{
+        margin-top: 20px;
+        margin-left: 10px;
+        font-size: 20px;
+        text-align:start;
+    }
+
+    #div1Replica img{
+        width: 500px;
+        height: 300px;
+        margin-top: 100px;
+    }
+    .div2 p{
+        margin-top: 40px;
+    }
+
+    #allAssessment{
+        display: none;
+    }
+
+    
+/* 
+    .Cdi div{
+        border: 3px solid gray;
+        width: 200px;
+        height: 200px;
+    } */
+   #trustworthiness p{
+    margin-top: 5px;
+    font-size: 25px;
+    color: white;
+   }
+
+   #header_{
+       position: fixed;
+       top: 0;
+       left: 0;
+       background-color: #2d3436;
+       width: 100%;
+       height: 70px;
+       color: white;
+       overflow-y: hidden;
+   }
+   
+   #header_ h4{
+       text-align:center;
+       font-size: 40px;
+       margin-top: 20px;
+       font-family: 'Playfair Display', serif;
+   }
+   
+   #sideBar{
+       position: fixed;
+       top: 100px;
+       left: 0;
+       height: 600px;
+       width: 230px;
+   }
+   
+   .side{
+       background-color: #2d3436;
+       border: 1px solid #2d3436;
+          border-bottom-color: white;
+          padding: 22px;
+          color: white;
+          font-size: 15px;
+          text-align: start;
+          /* cursor: pointer; */
+      }
+   
+      .sideEnable{
+       opacity: 1.0;
+      }
+      .sideDisable{
+       opacity: 0.6;
+       /* cursor: not-allowed; */
+      }
+
+      #body__{
+          position: absolute;
+          left: 300px;
+          top: 120px;
+          background-color: white;
+          width: 70%;
+          height: 1200px;
+          z-index: -1;
+      }
+
+      #introduction{
+          width: 100%;
+          background-color: white;
+          color: black;
+      }
+
+      #introduction h3{
+          font-size: 20px;
+      }
+
+      #introduction p{
+          font-size: 17px;
+          
+      }
+      #introduction1{
+        width: 100%;
+        background-color: white;
+        color: black;
+    }
+
+      #introduction1 h3{
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    #introduction1 p{
+        font-size: 17px;
+    }
+
+    #img_Dashboard{
+        width: 100%;
+        height: 230px;
+        text-align: center;
+        background-color: white;
+    }
+
+    #img_Dashboard img{
+        display: inline-block;
+        width: 40%;
+        height: 200px;
+        margin-top: 15px;
+    }
+
+      #img_Dashboard1{
+          width: 100%;
+          height: 230px;
+          text-align: center;
+          background-color: white;
+      }
+
+      #trainingIntro{
+          width: 90%;
+          height: 180px;
+          padding: 10px;
+          border: 1px solid gray;
+      }
+
+      #img_Dashboard1 img{
+          display: inline-block;
+          width: 40%;
+          height: 200px;
+          margin-top: 15px;
+      }
+
+      .buttonNext {
+        background-color: rgba(45, 52, 54,1.0);
+        border: none;
+        color: white;
+        padding: 10px 22px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 30px;
+        float: center;
+      }
+
+      #PassBtnLogical1{
+        margin-left: 300px;
+        margin-top: 50px;
+        width: 400px;
+        height: 50px;
+        float: unset;
+    }
+
+    #PassBtnLogical2{
+        margin-top: 80px;
+        width: 400px;
+        height: 50px;
+        float: unset;
+    }
+
+    #PassBtnLogical3{
+        margin-top: 100px;
+        width: 500px;
+        height: 70px;
+        float: unset;
+    }
+
+    #contVideo{
+        margin-top: 50px;
+        margin-left: 300px;
+        width: 400px;
+        height: 70px;
+        float: unset;
+    }
+
+    
+    #contVideo p{
+        margin-top: 20px;
+        font-size: 22px;
+    }
+    #AssRep{
+        display: inline-block;
+    }
+
+    #assessmentReportPage{
+        display: none;
+        width: 100%;
+        height: 600px;
+        text-align: center;
+    }
+      .buttonPrev{
+        background-color: rgba(45, 52, 54,1.0);
+        border: none;
+        color: white;
+        padding: 10px 22px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 30px;
+        float: left;
+      }
+
+      #dashboard_nxt{
+          bottom: 20px;
+          width: 100%;
+          height: 200px;
+        background-color: white;
+      }
+
+      #DashBtnId{
+          float: right;
+          margin-top: 40px;
+      }
+
+     
+      #PersonalAssessment{
+          display: none;
+        width: 100%;
+        background-color: white;
+      }
+
+      .allAssess_{
+        font-size: 14px;
+    }
+
+    .formRadioCover{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* #PAssBtn0{
+        
+    } */
+
+    #CommunityAssessment{
+        display: none;
+        width: 100%;
+        background-color: white;
+    }
+
+    #origHistoricalAss_{
+        display: none;
+        width: 100%;
+        background-color: white;
+    }
+
+    #LeadershipAss{
+        display: none;
+        width: 100%;
+        background-color: white;
+    }
+    #LogicalAss_{
+        display: none;
+        width: 100%;
+        background-color: white;
+    }
+
+
+#VARR{
+    display: none;
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+#actVid{
+    width: 600px;
+    height: 300px;
+    margin-left: 100px;
+    background-color: gray;
+    display:inline-block;
+    z-index: -1;
+}
+
+.vidCir{
+    font-size: 130px;
+    color: white;
+    margin-top: 65px;
+    z-index: 100;
+}
+
+    #ValueX{
+        position: relative;
+           display: none;
+       }
+
+       #traning{
+           display: none;
+       }
+
+       .valuesHeading{
+        color: #2d3436;
+        text-align: center;
+        font-size: 25px;
+    }
+
+
+    .val{
+        margin-top: 40px;
+     display: flex;
+     width: 900px;
+     height: 250px;
+     text-align: center;
+     background-color: black;
+     overflow-y: hidden;
+    }
+
+    .img0{
+        flex-basis: 200px;
+        display: inline-block;
+        overflow-y: hidden;
+        font-size: 100px;
+        padding: 10px;
+        color: white;
+        margin-top: 60px;
+    }
+
+    .txt0{
+        margin-top: 20px;
+        flex-basis: 600px;
+        text-align: center;
+        width: 150px;
+        height: 600px;
+        color: white;
+        z-index: 9;
+        text-align: justify;
+        margin-left: 20px;
+    }
+
+    .Codes{
+        display: none;
+        position: relative;
+        top: 50px;
+        display: none;
+    }
+
+    .CodesH1{
+        font-size: 25px;
+        margin-left: 50px;
+      }
+      .CodesP{
+        margin-left: 50px;
+      }
+
+      .code0{
+        display: flex;
+        margin-top: 40px;
+    }
+  
+    .code_0{
+        flex-basis: 130px;
+        border: 1px solid #2d3436;
+        border-radius: 60px 0px  0px 60px;
+        border-left: 3px solid #2d3436;
+        padding: 18px;
+    }
+    .code_00{
+        flex-basis: 130px;
+        border: 1px solid #2d3436;
+        border-radius: 0px 60px  60px 0px;
+        border-left: 3px solid #2d3436;
+        padding: 18px;
+        text-align: center;
+    }
+
+    .code_00 input{
+        cursor: pointer;
+        margin-left: 0;
+        height: 100px;
+        width: 100%;
+    }
+    .code_1{
+        flex-basis: 500px;
+         border: 1px solid #2d3436;
+        border-left: 3px solid #2d3436;
+        padding: 18px;
+    }
+
+
+    .Pledge{
+        display: none;
+        position: relative;
+        z-index: 11;
+        display: none;
+    }
+
+    .pledg0{
+        font-size: 30px;
+    }
+
+
+    .pastCover{
+        display: flex;
+        margin-top: 30px;
+        width: 400px;
+    }
+
+    .pledg2{
+        flex-basis: 270px;
+    }
+
+    .pledg3{
+        /* width: 600px;
+        height: 250px; */
+        resize: none;
+        overflow: hidden;
+    }
+
+    #ActionX{
+        position: relative;
+           display: none;
+    }
+
+    #action_Card_Cover{
+        display: flex;
+        align-items: center;
+    }
+
+
+    
+  .actionCard0{
+    flex-basis: 220px;
+    height: 400px;
+    border: 2px solid #2d3436;
+    border-radius: 10px 10px 0px 0px;
+    margin: 30px;
+  }
+
+
+  .imageSpace{
+    width: 100%;
+    height: 150px;
+    background-color: #2d3436;
+    color: white;
+    text-align: center;
+}
+
+.text_space0{
+    text-align: center;
+    font-size: 15px;
+}
+.text_space1{
+    text-align: center;
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+
+.btnCover{
+    text-align: center;
+}
+.btn0{
+display: inline-block;
+padding: 10px;
+}
+
+
+#hrstyle{
+    width: 430px; 
+    color: #2d3436;
+    text-align: start;
+    margin-left: 0px;
+    margin-top: -10px;
+}
+#CampaignX{
+    position: relative;
+    display: none;
+}
+
+.title{
+    text-align:center;
+}
+
+
+#codeX{
+    overflow-y:hidden;
+    margin-left:160px;
+    display: inline-block;
+    width:600px;
+    height:50px;
+    background-color:#bdc3c7;
+    padding-left:10px;
+    padding-bottom:5px;
+    padding-top:1px;
+    border-radius: 10px;
+    }
+    #code h3{
+        text-align: left;
+    }
+
+    .mother_cover0{
+        display: flex;
+        justify-content: space-around;
+        margin-left: 60px;
+        margin-top:50px;
+        color: white;
+    }
+
+    .mother{
+        width:240px;
+        height:250px;
+        padding:10px;
+    }
+
+    .student{
+        border: 1px solid transparent;
+        width: 100%;
+        padding-left:18px;
+        margin-left: -10px;
+        margin-top: -9px;
+        border-bottom-color: white;
+    }
+
+    #volonteerX{
+        position: relative;
+    display: none;
+    text-align: center;
+    }
+
+    .banIcon{
+        color: #15aabf;
+        font-size: 200px;
+        display: inline-block;
+    }
+
+    #volonteerX{
+        font-size: 30px;
+        color: #7f8c8d;
+    }
+
+    #certificate{
+        display: none;
+        position: relative;
+        object-fit:contain;
+        text-align: center;
+    }
+
+    .stylingii{
+        color: gray;
+        font-size: 15px;
+    }
+
+    #certificate img{
+        width: 300px;
+        height: 400px;
+        display: inline-block;
+    }
+/* 
+    .certtext{
+        margin-left: 50px;
+    } */
+#logout{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}

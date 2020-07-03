@@ -1,0 +1,91 @@
+/* -------------
+ 	Header
+------------- */
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 35px 100px 0;
+}
+
+header h2 {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav li {
+  margin: 0 15px;
+}
+
+header nav li:first-child {
+  margin-left: 0;
+}
+
+header nav li:last-child {
+  margin-right: 0;
+}
+
+/* Hero */
+.background-image {
+  position: absolute;
+  right: 5%;
+  bottom: -30%;
+  width: 401px;
+  height: 505px;
+  background-image: url(https://i.ibb.co/TTjgkym/africa.png);
+  border-radius: 21px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.background-image-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 1%;
+  background-image: url(https://i.ibb.co/TTjgkym/africa.png);
+}
+
+/* end of hero */
+
+/* carousel */
+.carousel-indicator {
+  margin-bottom: 50%;
+}
+
+@media only screen and (max-width: 768px){
+  .jumbotron{
+      margin-top: 10%;
+  }
+}
+/*meet the team section*/
+.team-member {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.team-member img {
+  width: 14rem;
+  height: 14rem;
+  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+.team-member h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+/* Social icons */
+.social {
+  color: grey;
+}
+
+

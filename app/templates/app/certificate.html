@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.user {
+			font-weight: bold;
+			position: absolute;
+			top: 23.3%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-transform: uppercase;
+		}
+
+		.certificate_number {
+			font-weight: bold;
+			position: absolute;
+			top: 40%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-transform: uppercase;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<img width="790" src="{% static 'assets/certificate.png' %}">
+		<span class="user">{{ user.get_full_name }}</span>
+		<span class="certificate_number">{{ certificate_number }}</span>
+	</center>
+</body>
+</html>
